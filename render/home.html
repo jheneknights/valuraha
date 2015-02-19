@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Valuraha - UX/UI</title>
+    <!-- Site Necessities-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta http-equiv="cleartype" content="on">
+    <!-- Favicons-->
+    <link rel="shortcut icon" type="image/png" href="">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+    <!-- fonts-->
+    <link rel="stylesheet" href="/assets/css/ace-fonts.css">
+    <!-- ace styles-->
+    <link rel="stylesheet" href="/assets/css/ace.min.css">
+    <link rel="stylesheet" href="/assets/css/ace-skins.min.css">
+    <!--if IE 7
+    link(rel="stylesheet", href="/assets/css/font-awesome-ie7.min.css)
+    
+    -->
+    <!-- page specific plugin styles-->
+    <link rel="stylesheet" href="/assets/css/jquery.gritter.css">
+    <!-- ace settings handler-->
+    <script src="/assets/js/ace-extra.min.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries-->
+    <!--if lte IE
+    script(src="/assets/js/html5shiv.js")
+    script(src="/assets/js/respond.min.js")
+    
+    -->
+    <!-- basic scripts-->
+    <!--if !IE-->
+    <script type="text/javascript" src="/assets/js/jquery-2.0.3.min.js"></script>
+    <!--if IE
+    script(type='text/javascript', src='/assets/js/jquery-1.10.2.min.js')
+    
+    -->
+    <script type="text/javascript">
+      if ("ontouchend" in document) $.getScript('/assets/js/jquery.mobile.custom.min.js');
+      
+    </script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/typeahead-bs2.min.js"></script>
+    <!-- ace scripts-->
+    <script src="/assets/js/ace-elements.min.js"></script>
+    <script src="/assets/js/ace.min.js"></script>
+    <!--for bootstrap modal manager - to overide default modal limitations-->
+    <link rel="stylesheet" href="/css/bootstrap-modal.css">
+    <script src="/js/bootstrap-modal.js"></script>
+    <script src="/js/bootstrap-modalmanager.js"></script>
+    <!-- page specific plugin scripts-->
+    <!--if lte IE 8
+    script(src='/assets/js/excanvas.min.js')
+    
+    -->
+    <script src="/assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="/assets/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="/assets/js/bootbox.min.js"></script>
+    <script src="/assets/js/jquery.easy-pie-chart.min.js"></script>
+    <script src="/assets/js/jquery.gritter.min.js"></script>
+    <script src="/assets/js/spin.min.js"></script>
+    <!-- for ticker-->
+    <script src="/assets/js/jquery.slimscroll.min.js"></script>
+    <!--for charts-->
+    <script src="/assets/js/flot/jquery.flot.min.js"></script>
+    <script src="/assets/js/flot/jquery.flot.pie.min.js"></script>
+    <script src="/assets/js/flot/jquery.flot.resize.min.js"></script>
+    <script src="/assets/js/date-time/moment.min.js"></script>
+    <!--script for all slimScroll intialisation-->
+    <script src="/javascripts/extra-run.js"></script>
+  </head>
+  <body class="skin-4 navbar-fixed">
+    <!-- The navigation bar-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display-->
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target="#role-navigation" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar red"></span><span class="icon-bar green"></span><span class="icon-bar orange"></span><span class="icon-bar blue"></span></button><a href="#" class="navbar-brand text-warning"><i class="icon-leaf"></i> VALURAHA</a>
+        </div>
+        <!-- the navigation menu listing-->
+        <div id="role-navigation" class="collapse navbar-collapse dropdown-lighter">
+          <ul class="nav navbar-nav pull-left">
+            <li><a href="/page/home">
+                <!-- i.icon-dashboard--> Dashboard</a></li>
+            <li><a href="/page/trading">
+                <!-- i.icon-dollar --> Portfolio</a></li>
+            <li><a href="/page/market">
+                <!-- i.icon-trophy--> The Market</a></li>
+            <li><a href="/page/leagues">
+                <!-- i.icon-flag--> Leagues</a></li>
+          </ul>
+          <ul id="user-menu" class="nav navbar-nav ace-nav pull-right">
+            <li class="dark-opaque"><a href="" data-toggle="dropdown" class="dropdown-toggle"><img src="/assets/avatars/avatar2.png" alt="Eugene Mutai" class="nav-user-photo"><span class="user-info"><small>Hey, </small>Eugene</span><i class="icon-caret-down"></i></a>
+              <ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+                <li><a href=""><i class="icon-user"> Profile</i></a></li>
+                <li class="divider"></li>
+                <li><a href=""><i class="icon-off"> Log Out</i></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- The main content begins here-->
+    <div id="main-container" class="main-container">
+      <div class="main-container-inner">
+        <!--The menu sidebar-->
+        <!-- Consolidates the menu on mobile view--><a id="menu-toggler" href="" class="menu-toggler"><span class="menu-text"></span></a>
+        <!-- Application sidebar-->
+        <div id="sidebar" class="sidebar sidebar-fixed menumin">
+          <ul class="nav nav-list">
+            <li class="active"><a href="#"><i class="icon-arrow-down"></i><span class="menu-text">Trading Deck</span></a></li>
+            <!-- Valuraha options - loop-->
+            <li><a href="" class="dropdown-toggle"><i class="icon-list"></i><span class="menu-text">Shares</span><b class="arrow icon-angle-down"></b></a>
+              <ul class="submenu">
+                <li><a href="#modal-wizard" data-toggle="modal"><i class="icon-double-angle-right"></i>Buy</a></li>
+                <li><a><i class="icon-double-angle-right"></i>Sell</a></li>
+              </ul>
+            </li>
+            <li><a href="" class="dropdown-toggle"><i class="icon-list"></i><span class="menu-text">Bonds</span><b class="arrow icon-angle-down"></b></a>
+              <ul class="submenu">
+                <li><a href="#modal-wizard" data-toggle="modal"><i class="icon-double-angle-right"></i>Buy</a></li>
+                <li><a><i class="icon-double-angle-right"></i>Sell</a></li>
+              </ul>
+            </li>
+            <li><a href="" class="dropdown-toggle"><i class="icon-list"></i><span class="menu-text">Loans</span><b class="arrow icon-angle-down"></b></a>
+              <ul class="submenu">
+                <li><a href="#modal-wizard" data-toggle="modal"><i class="icon-double-angle-right"></i>Buy</a></li>
+                <li><a><i class="icon-double-angle-right"></i>Sell</a></li>
+              </ul>
+            </li>
+            <li><a href="" class="dropdown-toggle"><i class="icon-list"></i><span class="menu-text">Fixed Deposits</span><b class="arrow icon-angle-down"></b></a>
+              <ul class="submenu">
+                <li><a href="#modal-wizard" data-toggle="modal"><i class="icon-double-angle-right"></i>Buy</a></li>
+                <li><a><i class="icon-double-angle-right"></i>Sell</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div id="sidebar-collapse" class="sidebar-collapse"><i data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right" class="icon-double-angle-left"></i></div>
+        </div>
+        <!--Content in the middle of the app-->
+        <div class="main-content">
+          <!--The page header-->
+          <div id="breadcrumbs" class="breadcrumbs breadcrumbs-fixed">
+            <ul class="breadcrumb">
+              <li><i class="icon-home home-icon"></i><a href="">Home</a></li>
+              <li class="active">Dashboard</li>
+            </ul>
+          </div>
+          <div class="page-content">
+            <div class="vspace-20 hidden-xs hidden-sm"></div>
+            <!--All the contest will be listed here, with the active one on the button-->
+            <div class="btn-group pull-right">
+              <button class="btn btn-warning btn-md">Big League Contest</button>
+              <button data-toggle="dropdown" class="btn btn-warning btn-md dropdown-toggle"><span class="icon-caret-down icon-only bigger-75"></span><span class="sr-only">Toggle dropdown</span></button>
+              <ul role="menu" class="dropdown-menu dropdown-yellow dropdown-warning">
+                <li><a href="#">Another Contest</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Another Contest</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Another Contest</a></li>
+              </ul>
+            </div>
+            <div class="page-header">
+              <h1 class="orange">Dashboard<small><i class="icon-double-angle-right"> Overview & Stats</i></small></h1>
+            </div>
+            <div class="row">
+              <!--Main Dashboard stuff-->
+              <div class="col-sm-9">
+                <div class="row">
+                  <!-- Trading dashboard centralised-->
+                  <div role="user relevant trading data" class="col-xs-12">
+                    <!--Trading dashboard-->
+                    <div class="tabbable tabs left">
+                      <ul id="myTabs" class="nav nav-tabs tab-color-blue padding-10 background-blue orange">
+                        <li class="active"><a data-toggle="tab" href="#shares"><i class="red icon-asterisk bigger-75"></i> Shares</a></li>
+                        <li><a data-toggle="tab" href="#bonds"><i class="green icon-circle bigger-75"></i> Bonds</a></li>
+                        <li><a data-toggle="tab" href="#loans"><i class="blue icon-money bigger-75"></i> Loans</a></li>
+                        <li><a data-toggle="tab" href="#deposits"><i class="black icon-download bigger-75"></i> Fixed Deposits</a></li>
+                      </ul>
+                      <div class="tab-content">
+                        <div id="shares" class="tab-pane in active">
+                          <!-- Table for the shares bought-->
+                          <table class="table table-bordered table-striped table-hover">
+                            <thead>
+                              <tr class="warning">
+                                <th>Stock</th>
+                                <th>Shares Owned</th>
+                                <th class="hidden-480">Weighed-in </th>
+                                <th>Market Price</th>
+                                <th>Change(%)</th>
+                                <th>Options</th>
+                              </tr>
+                            </thead>
+                            <tbody></tbody>
+                            <tr>
+                              <td>Loren Ipsum</td>
+                              <td><span class="label label-light">50000</span></td>
+                              <td class="hidden-480">5.15</td>
+                              <td>9.65</td>
+                              <td><span class="badge badge-success">4.5</span></td>
+                              <td>
+                                <div class="visible-md visible-lg hidden-sm hidden-xs btn-group">
+                                  <button data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Buy more" title="Buy more" class="btn btn-success btn-xs"><i class="icon-ok bigger-120"></i></button>
+                                  <button data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Sell" title="Sell" class="btn btn-warning btn-xs"><i class="icon-trash bigger-120"></i></button>
+                                  <button data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Info" title="Info" class="btn btn-info btn-xs"><i class="icon-info-sign bigger-120"></i></button>
+                                </div>
+                                <div class="visible-xs visible-sm hidden-md hidden-lg">
+                                  <div class="inline position-relative">
+                                    <button data-toggle="dropdown" class="btn btn-minier btn-primary dropdown-toggle"><i class="icon-cog icon-only bigger-120"></i></button>
+                                    <ul class="dropdown-menu dropdown-only-icon dropdown-yellow pull-right dropdown-caret dropdown-close">
+                                      <li><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Buy more" title="Buy more" href="#" class="tooltip-warning"><span class="green"><i class="icon-ok bigger-120"></i></span></a></li>
+                                      <li><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Sell" title="Sell" href="#" class="tooltip-warning"><span class="red"><i class="icon-trash bigger-120"></i></span></a></li>
+                                      <li><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Info" title="Info" href="#" class="tooltip-warning"><span class="blue"><i class="icon-info-sign bigger-120"></i></span></a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Loren Ipsum</td>
+                              <td><span class="label label-light">50000</span></td>
+                              <td class="hidden-480">5.15</td>
+                              <td>9.65</td>
+                              <td><span class="badge badge-success">4.5</span></td>
+                              <td>
+                                <div class="visible-md visible-lg hidden-sm hidden-xs btn-group">
+                                  <button data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Buy more" title="Buy more" class="btn btn-success btn-xs"><i class="icon-ok bigger-120"></i></button>
+                                  <button data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Sell" title="Sell" class="btn btn-warning btn-xs"><i class="icon-trash bigger-120"></i></button>
+                                  <button data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Info" title="Info" class="btn btn-info btn-xs"><i class="icon-info-sign bigger-120"></i></button>
+                                </div>
+                                <div class="visible-xs visible-sm hidden-md hidden-lg">
+                                  <div class="inline position-relative">
+                                    <button data-toggle="dropdown" class="btn btn-minier btn-primary dropdown-toggle"><i class="icon-cog icon-only bigger-120"></i></button>
+                                    <ul class="dropdown-menu dropdown-only-icon dropdown-yellow pull-right dropdown-caret dropdown-close">
+                                      <li><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Buy more" title="Buy more" href="#" class="tooltip-warning"><span class="green"><i class="icon-ok bigger-120"></i></span></a></li>
+                                      <li><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Sell" title="Sell" href="#" class="tooltip-warning"><span class="red"><i class="icon-trash bigger-120"></i></span></a></li>
+                                      <li><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Info" title="Info" href="#" class="tooltip-warning"><span class="blue"><i class="icon-info-sign bigger-120"></i></span></a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Loren Ipsum</td>
+                              <td><span class="label label-light">50000</span></td>
+                              <td class="hidden-480">5.15</td>
+                              <td>9.65</td>
+                              <td><span class="badge badge-success">4.5</span></td>
+                              <td>
+                                <div class="visible-md visible-lg hidden-sm hidden-xs btn-group">
+                                  <button data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Buy more" title="Buy more" class="btn btn-success btn-xs"><i class="icon-ok bigger-120"></i></button>
+                                  <button data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Sell" title="Sell" class="btn btn-warning btn-xs"><i class="icon-trash bigger-120"></i></button>
+                                  <button data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Info" title="Info" class="btn btn-info btn-xs"><i class="icon-info-sign bigger-120"></i></button>
+                                </div>
+                                <div class="visible-xs visible-sm hidden-md hidden-lg">
+                                  <div class="inline position-relative">
+                                    <button data-toggle="dropdown" class="btn btn-minier btn-primary dropdown-toggle"><i class="icon-cog icon-only bigger-120"></i></button>
+                                    <ul class="dropdown-menu dropdown-only-icon dropdown-yellow pull-right dropdown-caret dropdown-close">
+                                      <li><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Buy more" title="Buy more" href="#" class="tooltip-warning"><span class="green"><i class="icon-ok bigger-120"></i></span></a></li>
+                                      <li><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Sell" title="Sell" href="#" class="tooltip-warning"><span class="red"><i class="icon-trash bigger-120"></i></span></a></li>
+                                      <li><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Info" title="Info" href="#" class="tooltip-warning"><span class="blue"><i class="icon-info-sign bigger-120"></i></span></a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Loren Ipsum</td>
+                              <td><span class="label label-light">50000</span></td>
+                              <td class="hidden-480">5.15</td>
+                              <td>9.65</td>
+                              <td><span class="badge badge-success">4.5</span></td>
+                              <td>
+                                <div class="visible-md visible-lg hidden-sm hidden-xs btn-group">
+                                  <button data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Buy more" title="Buy more" class="btn btn-success btn-xs"><i class="icon-ok bigger-120"></i></button>
+                                  <button data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Sell" title="Sell" class="btn btn-warning btn-xs"><i class="icon-trash bigger-120"></i></button>
+                                  <button data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Info" title="Info" class="btn btn-info btn-xs"><i class="icon-info-sign bigger-120"></i></button>
+                                </div>
+                                <div class="visible-xs visible-sm hidden-md hidden-lg">
+                                  <div class="inline position-relative">
+                                    <button data-toggle="dropdown" class="btn btn-minier btn-primary dropdown-toggle"><i class="icon-cog icon-only bigger-120"></i></button>
+                                    <ul class="dropdown-menu dropdown-only-icon dropdown-yellow pull-right dropdown-caret dropdown-close">
+                                      <li><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Buy more" title="Buy more" href="#" class="tooltip-warning"><span class="green"><i class="icon-ok bigger-120"></i></span></a></li>
+                                      <li><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Sell" title="Sell" href="#" class="tooltip-warning"><span class="red"><i class="icon-trash bigger-120"></i></span></a></li>
+                                      <li><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Info" title="Info" href="#" class="tooltip-warning"><span class="blue"><i class="icon-info-sign bigger-120"></i></span></a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Loren Ipsum</td>
+                              <td><span class="label label-light">50000</span></td>
+                              <td class="hidden-480">5.15</td>
+                              <td>9.65</td>
+                              <td><span class="badge badge-success">4.5</span></td>
+                              <td>
+                                <div class="visible-md visible-lg hidden-sm hidden-xs btn-group">
+                                  <button data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Buy more" title="Buy more" class="btn btn-success btn-xs"><i class="icon-ok bigger-120"></i></button>
+                                  <button data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Sell" title="Sell" class="btn btn-warning btn-xs"><i class="icon-trash bigger-120"></i></button>
+                                  <button data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Info" title="Info" class="btn btn-info btn-xs"><i class="icon-info-sign bigger-120"></i></button>
+                                </div>
+                                <div class="visible-xs visible-sm hidden-md hidden-lg">
+                                  <div class="inline position-relative">
+                                    <button data-toggle="dropdown" class="btn btn-minier btn-primary dropdown-toggle"><i class="icon-cog icon-only bigger-120"></i></button>
+                                    <ul class="dropdown-menu dropdown-only-icon dropdown-yellow pull-right dropdown-caret dropdown-close">
+                                      <li><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Buy more" title="Buy more" href="#" class="tooltip-warning"><span class="green"><i class="icon-ok bigger-120"></i></span></a></li>
+                                      <li><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Sell" title="Sell" href="#" class="tooltip-warning"><span class="red"><i class="icon-trash bigger-120"></i></span></a></li>
+                                      <li><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Info" title="Info" href="#" class="tooltip-warning"><span class="blue"><i class="icon-info-sign bigger-120"></i></span></a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                        <div id="bonds" class="tab-pane">
+                          <!--A jumbotron used when no data is available to display related to the user-->
+                          <div class="jumbotron">
+                            <h2>Buy Bonds</h2>
+                            <p class="grey">You dont have any bonds yet.</p>
+                            <p><a role="button" class="btn btn-warning btn-lg">Buy Bonds</a></p>
+                          </div>
+                        </div>
+                        <div id="loans" class="tab-pane">
+                          <div class="jumbotron">
+                            <h2>Get a loan</h2>
+                            <p class="grey">You haven't borrowed any money yet to happily invest.</p>
+                            <p><a role="button" class="btn btn-warning btn-lg">Get Loan</a></p>
+                          </div>
+                        </div>
+                        <div id="deposits" class="tab-pane">
+                          <div class="jumbotron">
+                            <h2>Fixed Deposits</h2>
+                            <p class="grey">You have no money saved up yet.</p>
+                            <p><a role="button" class="btn btn-warning btn-lg">Make Deposit</a></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hr hr32 hr-dotted vspace-20"></div>
+                  </div>
+                  <!--Contest Portfolio - User analytical data-->
+                  <div role="user specific analytical data" class="col-sm-12">
+                    <div id="activity-tabs" class="widget-box light-border">
+                      <div class="widget-header widget-header-flat header-color-orange">
+                        <h4 class="smaller"><i class="icon-info-sign bigger-120"></i>Contest Portfolio</h4>
+                        <div class="widget-toolbar">
+                          <ul id="activty-tabs" class="nav nav-tabs tab-color-blue">
+                            <li class="active"><a data-toggle="tab" href="#recent-activities"><i class="icon-time"></i> Recent activities</a></li>
+                            <li><a data-toggle="tab" href="#holdings"><i class="icon-circle"></i> Holdings</a></li>
+                            <li><a data-toggle="tab" href="#performance"><i class="icon-eye-open"></i> Preformance</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="widget-body">
+                        <div class="widget-main padding-10">
+                          <div class="tab-content no-padding">
+                            <div id="recent-activities" class="tab-pane active">
+                              <!--adding a scroll-bar to condense the data-->
+                              <div data-height="300" class="slim-scroll">
+                                <div id="recent-activities-feed" class="profile-feed">
+                                  <!--The Recent activities listed here-->
+                                  <div class="profile-activity clearfix padding-10">
+                                    <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-money btn-success no-hover"></i><span class="label label-success pull-right">Settled</span>
+                                      <p class="statement large">You <span class="label label-info">sold </span><strong class="label label-light bold">50000 </strong><span class="text-info"> Safaricom</span> shares for Ksh.<span class="text-info"> 1,568,000</span></p>
+                                      <div class="time"><i class="icon-time bigger-32"></i> 2 days ago</div>
+                                    </div>
+                                  </div>
+                                  <div class="profile-activity clearfix padding-10">
+                                    <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-money btn-success no-hover"></i><span class="label label-success pull-right">Settled</span>
+                                      <p class="statement large">You <span class="label label-info">sold </span><strong class="label label-light bold">50000 </strong><span class="text-info"> Safaricom</span> shares for Ksh.<span class="text-info"> 1,568,000</span></p>
+                                      <div class="time"><i class="icon-time bigger-32"></i> 2 days ago</div>
+                                    </div>
+                                  </div>
+                                  <div class="profile-activity clearfix padding-10">
+                                    <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-money btn-success no-hover"></i><span class="label label-success pull-right">Settled</span>
+                                      <p class="statement large">You <span class="label label-info">sold </span><strong class="label label-light bold">50000 </strong><span class="text-info"> Safaricom</span> shares for Ksh.<span class="text-info"> 1,568,000</span></p>
+                                      <div class="time"><i class="icon-time bigger-32"></i> 2 days ago</div>
+                                    </div>
+                                  </div>
+                                  <div class="profile-activity clearfix padding-10">
+                                    <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-money btn-success no-hover"></i><span class="label label-success pull-right">Settled</span>
+                                      <p class="statement large">You <span class="label label-info">sold </span><strong class="label label-light bold">50000 </strong><span class="text-info"> Safaricom</span> shares for Ksh.<span class="text-info"> 1,568,000</span></p>
+                                      <div class="time"><i class="icon-time bigger-32"></i> 2 days ago</div>
+                                    </div>
+                                  </div>
+                                  <div class="profile-activity clearfix padding-10">
+                                    <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-money btn-success no-hover"></i><span class="label label-success pull-right">Settled</span>
+                                      <p class="statement large">You <span class="label label-info">sold </span><strong class="label label-light bold">50000 </strong><span class="text-info"> Safaricom</span> shares for Ksh.<span class="text-info"> 1,568,000</span></p>
+                                      <div class="time"><i class="icon-time bigger-32"></i> 2 days ago</div>
+                                    </div>
+                                  </div>
+                                  <div class="profile-activity clearfix padding-10">
+                                    <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-money btn-success no-hover"></i><span class="label label-success pull-right">Settled</span>
+                                      <p class="statement large">You <span class="label label-info">sold </span><strong class="label label-light bold">50000 </strong><span class="text-info"> Safaricom</span> shares for Ksh.<span class="text-info"> 1,568,000</span></p>
+                                      <div class="time"><i class="icon-time bigger-32"></i> 2 days ago</div>
+                                    </div>
+                                  </div>
+                                  <div class="profile-activity clearfix padding-10">
+                                    <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-money btn-success no-hover"></i><span class="label label-success pull-right">Settled</span>
+                                      <p class="statement large">You <span class="label label-info">sold </span><strong class="label label-light bold">50000 </strong><span class="text-info"> Safaricom</span> shares for Ksh.<span class="text-info"> 1,568,000</span></p>
+                                      <div class="time"><i class="icon-time bigger-32"></i> 2 days ago</div>
+                                    </div>
+                                  </div>
+                                  <div class="profile-activity clearfix padding-10">
+                                    <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-money btn-success no-hover"></i><span class="label label-success pull-right">Settled</span>
+                                      <p class="statement large">You <span class="label label-info">sold </span><strong class="label label-light bold">50000 </strong><span class="text-info"> Safaricom</span> shares for Ksh.<span class="text-info"> 1,568,000</span></p>
+                                      <div class="time"><i class="icon-time bigger-32"></i> 2 days ago</div>
+                                    </div>
+                                  </div>
+                                  <div class="profile-activity clearfix padding-10">
+                                    <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-money btn-success no-hover"></i><span class="label label-success pull-right">Settled</span>
+                                      <p class="statement large">You <span class="label label-info">sold </span><strong class="label label-light bold">50000 </strong><span class="text-info"> Safaricom</span> shares for Ksh.<span class="text-info"> 1,568,000</span></p>
+                                      <div class="time"><i class="icon-time bigger-32"></i> 2 days ago</div>
+                                    </div>
+                                  </div>
+                                  <div class="profile-activity clearfix padding-10">
+                                    <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-money btn-success no-hover"></i><span class="label label-success pull-right">Settled</span>
+                                      <p class="statement large">You <span class="label label-info">sold </span><strong class="label label-light bold">50000 </strong><span class="text-info"> Safaricom</span> shares for Ksh.<span class="text-info"> 1,568,000</span></p>
+                                      <div class="time"><i class="icon-time bigger-32"></i> 2 days ago</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div id="holdings" class="tab-pane">Holdings chart</div>
+                            <div id="performance" class="tab-pane">Portfolio chart</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hr hr32 hr-dotted vspace-20"></div>
+                    <div class="row">
+                      <!--Comments-->
+                      <div role="conversations" class="col-xs-12">
+                        <div id="transparent" class="widget-box light-border">
+                          <div class="widget-header header-color-orange widget-header-flat">
+                            <h4 class="smaller"><i class="icon-comments"></i>Conversation</h4>
+                          </div>
+                          <div class="widget-body">
+                            <div class="widget-main no-padding">
+                              <div data-height="300" class="slim-scroll">
+                                <div class="dialogs">
+                                  <!--The comments-->
+                                  <div class="itemdiv dialogdiv">
+                                    <div class="user"><img alt="image" src="/assets/avatars/avatar1.png"></div>
+                                    <div class="body">
+                                      <div class="time"><i class="icon-time"></i><span class="grey"> 12 mins ago</span></div>
+                                      <div class="name"><a>Jhene Knights</a></div>
+                                      <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis.</div>
+                                      <div class="btn-group">
+                                        <button type="button" class="btn btn-minier btn-info">Like</button>
+                                        <button type="button" class="btn-btn-minier btn-success">Reply</button>
+                                      </div>
+                                      <!--
+                                      div.tools
+                                      a.btn.btn-minier.btn-info(data-rel="tooltip", title, data-original-title="Reply")
+                                       i.icon-only.icon-share-alt
+                                      -->
+                                    </div>
+                                  </div>
+                                  <div class="itemdiv dialogdiv">
+                                    <div class="user"><img alt="image" src="/assets/avatars/avatar1.png"></div>
+                                    <div class="body">
+                                      <div class="time"><i class="icon-time"></i><span class="grey"> 12 mins ago</span></div>
+                                      <div class="name"><a>Jhene Knights</a></div>
+                                      <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis.</div>
+                                      <div class="btn-group">
+                                        <button type="button" class="btn btn-minier btn-info">Like</button>
+                                        <button type="button" class="btn-btn-minier btn-success">Reply</button>
+                                      </div>
+                                      <!--
+                                      div.tools
+                                      a.btn.btn-minier.btn-info(data-rel="tooltip", title, data-original-title="Reply")
+                                       i.icon-only.icon-share-alt
+                                      -->
+                                    </div>
+                                  </div>
+                                  <div class="itemdiv dialogdiv">
+                                    <div class="user"><img alt="image" src="/assets/avatars/avatar1.png"></div>
+                                    <div class="body">
+                                      <div class="time"><i class="icon-time"></i><span class="grey"> 12 mins ago</span></div>
+                                      <div class="name"><a>Jhene Knights</a></div>
+                                      <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis.</div>
+                                      <div class="btn-group">
+                                        <button type="button" class="btn btn-minier btn-info">Like</button>
+                                        <button type="button" class="btn-btn-minier btn-success">Reply</button>
+                                      </div>
+                                      <!--
+                                      div.tools
+                                      a.btn.btn-minier.btn-info(data-rel="tooltip", title, data-original-title="Reply")
+                                       i.icon-only.icon-share-alt
+                                      -->
+                                    </div>
+                                  </div>
+                                  <div class="itemdiv dialogdiv">
+                                    <div class="user"><img alt="image" src="/assets/avatars/avatar1.png"></div>
+                                    <div class="body">
+                                      <div class="time"><i class="icon-time"></i><span class="grey"> 12 mins ago</span></div>
+                                      <div class="name"><a>Jhene Knights</a></div>
+                                      <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis.</div>
+                                      <div class="btn-group">
+                                        <button type="button" class="btn btn-minier btn-info">Like</button>
+                                        <button type="button" class="btn-btn-minier btn-success">Reply</button>
+                                      </div>
+                                      <!--
+                                      div.tools
+                                      a.btn.btn-minier.btn-info(data-rel="tooltip", title, data-original-title="Reply")
+                                       i.icon-only.icon-share-alt
+                                      -->
+                                    </div>
+                                  </div>
+                                  <div class="itemdiv dialogdiv">
+                                    <div class="user"><img alt="image" src="/assets/avatars/avatar1.png"></div>
+                                    <div class="body">
+                                      <div class="time"><i class="icon-time"></i><span class="grey"> 12 mins ago</span></div>
+                                      <div class="name"><a>Jhene Knights</a></div>
+                                      <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis.</div>
+                                      <div class="btn-group">
+                                        <button type="button" class="btn btn-minier btn-info">Like</button>
+                                        <button type="button" class="btn-btn-minier btn-success">Reply</button>
+                                      </div>
+                                      <!--
+                                      div.tools
+                                      a.btn.btn-minier.btn-info(data-rel="tooltip", title, data-original-title="Reply")
+                                       i.icon-only.icon-share-alt
+                                      -->
+                                    </div>
+                                  </div>
+                                  <div class="itemdiv dialogdiv">
+                                    <div class="user"><img alt="image" src="/assets/avatars/avatar1.png"></div>
+                                    <div class="body">
+                                      <div class="time"><i class="icon-time"></i><span class="grey"> 12 mins ago</span></div>
+                                      <div class="name"><a>Jhene Knights</a></div>
+                                      <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis.</div>
+                                      <div class="btn-group">
+                                        <button type="button" class="btn btn-minier btn-info">Like</button>
+                                        <button type="button" class="btn-btn-minier btn-success">Reply</button>
+                                      </div>
+                                      <!--
+                                      div.tools
+                                      a.btn.btn-minier.btn-info(data-rel="tooltip", title, data-original-title="Reply")
+                                       i.icon-only.icon-share-alt
+                                      -->
+                                    </div>
+                                  </div>
+                                  <div class="itemdiv dialogdiv">
+                                    <div class="user"><img alt="image" src="/assets/avatars/avatar1.png"></div>
+                                    <div class="body">
+                                      <div class="time"><i class="icon-time"></i><span class="grey"> 12 mins ago</span></div>
+                                      <div class="name"><a>Jhene Knights</a></div>
+                                      <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis.</div>
+                                      <div class="btn-group">
+                                        <button type="button" class="btn btn-minier btn-info">Like</button>
+                                        <button type="button" class="btn-btn-minier btn-success">Reply</button>
+                                      </div>
+                                      <!--
+                                      div.tools
+                                      a.btn.btn-minier.btn-info(data-rel="tooltip", title, data-original-title="Reply")
+                                       i.icon-only.icon-share-alt
+                                      -->
+                                    </div>
+                                  </div>
+                                  <div class="itemdiv dialogdiv">
+                                    <div class="user"><img alt="image" src="/assets/avatars/avatar1.png"></div>
+                                    <div class="body">
+                                      <div class="time"><i class="icon-time"></i><span class="grey"> 12 mins ago</span></div>
+                                      <div class="name"><a>Jhene Knights</a></div>
+                                      <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis.</div>
+                                      <div class="btn-group">
+                                        <button type="button" class="btn btn-minier btn-info">Like</button>
+                                        <button type="button" class="btn-btn-minier btn-success">Reply</button>
+                                      </div>
+                                      <!--
+                                      div.tools
+                                      a.btn.btn-minier.btn-info(data-rel="tooltip", title, data-original-title="Reply")
+                                       i.icon-only.icon-share-alt
+                                      -->
+                                    </div>
+                                  </div>
+                                  <div class="itemdiv dialogdiv">
+                                    <div class="user"><img alt="image" src="/assets/avatars/avatar1.png"></div>
+                                    <div class="body">
+                                      <div class="time"><i class="icon-time"></i><span class="grey"> 12 mins ago</span></div>
+                                      <div class="name"><a>Jhene Knights</a></div>
+                                      <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis.</div>
+                                      <div class="btn-group">
+                                        <button type="button" class="btn btn-minier btn-info">Like</button>
+                                        <button type="button" class="btn-btn-minier btn-success">Reply</button>
+                                      </div>
+                                      <!--
+                                      div.tools
+                                      a.btn.btn-minier.btn-info(data-rel="tooltip", title, data-original-title="Reply")
+                                       i.icon-only.icon-share-alt
+                                      -->
+                                    </div>
+                                  </div>
+                                  <div class="itemdiv dialogdiv">
+                                    <div class="user"><img alt="image" src="/assets/avatars/avatar1.png"></div>
+                                    <div class="body">
+                                      <div class="time"><i class="icon-time"></i><span class="grey"> 12 mins ago</span></div>
+                                      <div class="name"><a>Jhene Knights</a></div>
+                                      <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis.</div>
+                                      <div class="btn-group">
+                                        <button type="button" class="btn btn-minier btn-info">Like</button>
+                                        <button type="button" class="btn-btn-minier btn-success">Reply</button>
+                                      </div>
+                                      <!--
+                                      div.tools
+                                      a.btn.btn-minier.btn-info(data-rel="tooltip", title, data-original-title="Reply")
+                                       i.icon-only.icon-share-alt
+                                      -->
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!--The user can add a comment-->
+                              <form class="no-padding">
+                                <div class="form-actions">
+                                  <div class="input-group">
+                                    <input placeholder="Type in your two cents here" type="text" name="message" class="form-control"><span class="input-group-btn">
+                                      <button type="button" class="btn btn-sm btn-info no-radius"><i class="icon-share-alt"></i>Comment</button></span>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Stock updates ticker-->
+              <div class="col-sm-3 hidden-xs">
+                <div id="transparent" class="widget-box light-border">
+                  <div class="widget-header header-color-orange widget-header-flat">
+                    <h4 class="smaller"><i class="icon-time"></i>NSE Updates</h4>
+                  </div>
+                  <div class="widget-body">
+                    <div class="widget-main padding-4">
+                      <div data-height="300" class="slim-scroll">
+                        <div id="nse-stocks-feeds" class="profile-feed">
+                          <!-- The updates populated here-->
+                          <div class="profile-activity clearfix">
+                            <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-arrow-down btn-danger no-hover"></i><a class="user grey">The Company</a><span class="label label-danger arrowed pull-right margin-10">1.5</span>
+                              <div class="time"><i class="icon-time bigger-32"></i> 16 min ago</div>
+                            </div>
+                          </div>
+                          <div class="profile-activity clearfix">
+                            <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-arrow-down btn-danger no-hover"></i><a class="user grey">The Company</a><span class="label label-danger arrowed pull-right margin-10">2.5</span>
+                              <div class="time"><i class="icon-time bigger-32"></i> 16 min ago</div>
+                            </div>
+                          </div>
+                          <div class="profile-activity clearfix">
+                            <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-arrow-down btn-danger no-hover"></i><a class="user grey">The Company</a><span class="label label-danger arrowed pull-right margin-10">3.5</span>
+                              <div class="time"><i class="icon-time bigger-32"></i> 16 min ago</div>
+                            </div>
+                          </div>
+                          <div class="profile-activity clearfix">
+                            <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-arrow-down btn-danger no-hover"></i><a class="user grey">The Company</a><span class="label label-danger arrowed pull-right margin-10">4.5</span>
+                              <div class="time"><i class="icon-time bigger-32"></i> 16 min ago</div>
+                            </div>
+                          </div>
+                          <div class="profile-activity clearfix">
+                            <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-arrow-down btn-danger no-hover"></i><a class="user grey">The Company</a><span class="label label-danger arrowed pull-right margin-10">5.5</span>
+                              <div class="time"><i class="icon-time bigger-32"></i> 16 min ago</div>
+                            </div>
+                          </div>
+                          <div class="profile-activity clearfix">
+                            <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-arrow-down btn-danger no-hover"></i><a class="user grey">The Company</a><span class="label label-danger arrowed pull-right margin-10">6.5</span>
+                              <div class="time"><i class="icon-time bigger-32"></i> 16 min ago</div>
+                            </div>
+                          </div>
+                          <div class="profile-activity clearfix">
+                            <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-arrow-down btn-danger no-hover"></i><a class="user grey">The Company</a><span class="label label-danger arrowed pull-right margin-10">7.5</span>
+                              <div class="time"><i class="icon-time bigger-32"></i> 16 min ago</div>
+                            </div>
+                          </div>
+                          <div class="profile-activity clearfix">
+                            <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-arrow-down btn-danger no-hover"></i><a class="user grey">The Company</a><span class="label label-danger arrowed pull-right margin-10">8.5</span>
+                              <div class="time"><i class="icon-time bigger-32"></i> 16 min ago</div>
+                            </div>
+                          </div>
+                          <div class="profile-activity clearfix">
+                            <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-arrow-down btn-danger no-hover"></i><a class="user grey">The Company</a><span class="label label-danger arrowed pull-right margin-10">9.5</span>
+                              <div class="time"><i class="icon-time bigger-32"></i> 16 min ago</div>
+                            </div>
+                          </div>
+                          <div class="profile-activity clearfix">
+                            <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-arrow-down btn-danger no-hover"></i><a class="user grey">The Company</a><span class="label label-danger arrowed pull-right margin-10">10.5</span>
+                              <div class="time"><i class="icon-time bigger-32"></i> 16 min ago</div>
+                            </div>
+                          </div>
+                          <div class="profile-activity clearfix">
+                            <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-arrow-down btn-danger no-hover"></i><a class="user grey">The Company</a><span class="label label-danger arrowed pull-right margin-10">11.5</span>
+                              <div class="time"><i class="icon-time bigger-32"></i> 16 min ago</div>
+                            </div>
+                          </div>
+                          <div class="profile-activity clearfix">
+                            <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-arrow-down btn-danger no-hover"></i><a class="user grey">The Company</a><span class="label label-danger arrowed pull-right margin-10">12.5</span>
+                              <div class="time"><i class="icon-time bigger-32"></i> 16 min ago</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="hr hr20 hr-dotted"></div>
+                <!--Headlines will fall here-->
+                <div id="transparent" class="widget-box light-border">
+                  <div class="widget-header header-color-orange widget-header-flat">
+                    <h4 class="smaller"><i class="icon-comments"></i>Headlines</h4>
+                  </div>
+                  <div class="widget-body">
+                    <div class="widget-main padding-4">
+                      <div data-height="400" class="slim-scroll">
+                        <div class="dialogs">
+                          <div class="profile-activity clearfix">
+                            <div style="padding-right: 0.45em"><a target="_blank" href="http://app.prittynote.com" class="user grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                              <div class="time"><i class="icon-time bigger-32"> an hour ago</i></div>
+                            </div>
+                          </div>
+                          <div class="profile-activity clearfix">
+                            <div style="padding-right: 0.45em"><a target="_blank" href="http://app.prittynote.com" class="user grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                              <div class="time"><i class="icon-time bigger-32"> an hour ago</i></div>
+                            </div>
+                          </div>
+                          <div class="profile-activity clearfix">
+                            <div style="padding-right: 0.45em"><a target="_blank" href="http://app.prittynote.com" class="user grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                              <div class="time"><i class="icon-time bigger-32"> an hour ago</i></div>
+                            </div>
+                          </div>
+                          <div class="profile-activity clearfix">
+                            <div style="padding-right: 0.45em"><a target="_blank" href="http://app.prittynote.com" class="user grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                              <div class="time"><i class="icon-time bigger-32"> an hour ago</i></div>
+                            </div>
+                          </div>
+                          <div class="profile-activity clearfix">
+                            <div style="padding-right: 0.45em"><a target="_blank" href="http://app.prittynote.com" class="user grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                              <div class="time"><i class="icon-time bigger-32"> an hour ago</i></div>
+                            </div>
+                          </div>
+                          <div class="profile-activity clearfix">
+                            <div style="padding-right: 0.45em"><a target="_blank" href="http://app.prittynote.com" class="user grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                              <div class="time"><i class="icon-time bigger-32"> an hour ago</i></div>
+                            </div>
+                          </div>
+                          <div class="profile-activity clearfix">
+                            <div style="padding-right: 0.45em"><a target="_blank" href="http://app.prittynote.com" class="user grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                              <div class="time"><i class="icon-time bigger-32"> an hour ago</i></div>
+                            </div>
+                          </div>
+                          <div class="profile-activity clearfix">
+                            <div style="padding-right: 0.45em"><a target="_blank" href="http://app.prittynote.com" class="user grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                              <div class="time"><i class="icon-time bigger-32"> an hour ago</i></div>
+                            </div>
+                          </div>
+                          <div class="profile-activity clearfix">
+                            <div style="padding-right: 0.45em"><a target="_blank" href="http://app.prittynote.com" class="user grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                              <div class="time"><i class="icon-time bigger-32"> an hour ago</i></div>
+                            </div>
+                          </div>
+                          <div class="profile-activity clearfix">
+                            <div style="padding-right: 0.45em"><a target="_blank" href="http://app.prittynote.com" class="user grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                              <div class="time"><i class="icon-time bigger-32"> an hour ago</i></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--modal window to buy shares, bonds...-->
+        <!--required script-->
+        <script src="/assets/js/fuelux/fuelux.wizard.min.js"></script>
+        <!--The MODAL STEP DIALOG-->
+        <div id="modal-wizard" style="margin: 0 auto;" datawidth="800" tab-index="-1" data-backdrop="static" data-keyboard="false" aria-hidden="true" role="dialog" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!--The header-->
+              <div data-target="#modal-step-contents" class="modal-header">
+                <ul class="wizard-steps">
+                  <li data-target="#step-1-choosing" class="active"><span class="step">1</span><span class="title">Select Shares</span></li>
+                  <li data-target="#step-2-ordering"><span class="step">2</span><span class="title">Place Order</span></li>
+                  <li data-target="#step-3-confirm"><span class="step">3</span><span class="title">Confirm Transaction</span></li>
+                </ul>
+              </div>
+              <!--The modal content-->
+              <div id="modal-step-contents" class="modal-body step-content">
+                <!--The choise content-->
+                <div id="step-1-choosing" class="step-pane active">
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <!--The 3 contents-->
+                      <div class="row">
+                        <!--Select Company list-->
+                        <div class="col-xs-12 col-sm-5">
+                          <div class="widget-box transparent border">
+                            <div class="widget-header widget-header-flat">
+                              <h5 class="bigger lighter orange">Select Company</h5>
+                              <div class="widget-toolbar"><a href="#"><i class="icon-arrow-down grey"></i></a><a href="#"><i class="icon-list grey"></i></a></div>
+                            </div>
+                            <div class="widget-body">
+                              <div class="widget-main padding-4">
+                                <div data-height="250" class="slim-scroll">
+                                  <!-- The updates populated here-->
+                                  <div class="profile-activity clearfix">
+                                    <div style="padding-right: 0.45em"><span class="label label-danger pull-right margin-10"><i class="icon-arrow-down"> 1.5</i></span><a class="user orange">SFRM</a>
+                                      <h4 class="grey no-padding">Safaricom</h4>
+                                    </div>
+                                  </div>
+                                  <div class="profile-activity clearfix">
+                                    <div style="padding-right: 0.45em"><span class="label label-danger pull-right margin-10"><i class="icon-arrow-down"> 2.5</i></span><a class="user orange">SFRM</a>
+                                      <h4 class="grey no-padding">Safaricom</h4>
+                                    </div>
+                                  </div>
+                                  <div class="profile-activity clearfix">
+                                    <div style="padding-right: 0.45em"><span class="label label-danger pull-right margin-10"><i class="icon-arrow-down"> 3.5</i></span><a class="user orange">SFRM</a>
+                                      <h4 class="grey no-padding">Safaricom</h4>
+                                    </div>
+                                  </div>
+                                  <div class="profile-activity clearfix">
+                                    <div style="padding-right: 0.45em"><span class="label label-danger pull-right margin-10"><i class="icon-arrow-down"> 4.5</i></span><a class="user orange">SFRM</a>
+                                      <h4 class="grey no-padding">Safaricom</h4>
+                                    </div>
+                                  </div>
+                                  <div class="profile-activity clearfix">
+                                    <div style="padding-right: 0.45em"><span class="label label-danger pull-right margin-10"><i class="icon-arrow-down"> 5.5</i></span><a class="user orange">SFRM</a>
+                                      <h4 class="grey no-padding">Safaricom</h4>
+                                    </div>
+                                  </div>
+                                  <div class="profile-activity clearfix">
+                                    <div style="padding-right: 0.45em"><span class="label label-danger pull-right margin-10"><i class="icon-arrow-down"> 6.5</i></span><a class="user orange">SFRM</a>
+                                      <h4 class="grey no-padding">Safaricom</h4>
+                                    </div>
+                                  </div>
+                                  <div class="profile-activity clearfix">
+                                    <div style="padding-right: 0.45em"><span class="label label-danger pull-right margin-10"><i class="icon-arrow-down"> 7.5</i></span><a class="user orange">SFRM</a>
+                                      <h4 class="grey no-padding">Safaricom</h4>
+                                    </div>
+                                  </div>
+                                  <div class="profile-activity clearfix">
+                                    <div style="padding-right: 0.45em"><span class="label label-danger pull-right margin-10"><i class="icon-arrow-down"> 8.5</i></span><a class="user orange">SFRM</a>
+                                      <h4 class="grey no-padding">Safaricom</h4>
+                                    </div>
+                                  </div>
+                                  <div class="profile-activity clearfix">
+                                    <div style="padding-right: 0.45em"><span class="label label-danger pull-right margin-10"><i class="icon-arrow-down"> 9.5</i></span><a class="user orange">SFRM</a>
+                                      <h4 class="grey no-padding">Safaricom</h4>
+                                    </div>
+                                  </div>
+                                  <div class="profile-activity clearfix">
+                                    <div style="padding-right: 0.45em"><span class="label label-danger pull-right margin-10"><i class="icon-arrow-down"> 10.5</i></span><a class="user orange">SFRM</a>
+                                      <h4 class="grey no-padding">Safaricom</h4>
+                                    </div>
+                                  </div>
+                                  <div class="profile-activity clearfix">
+                                    <div style="padding-right: 0.45em"><span class="label label-danger pull-right margin-10"><i class="icon-arrow-down"> 11.5</i></span><a class="user orange">SFRM</a>
+                                      <h4 class="grey no-padding">Safaricom</h4>
+                                    </div>
+                                  </div>
+                                  <div class="profile-activity clearfix">
+                                    <div style="padding-right: 0.45em"><span class="label label-danger pull-right margin-10"><i class="icon-arrow-down"> 12.5</i></span><a class="user orange">SFRM</a>
+                                      <h4 class="grey no-padding">Safaricom</h4>
+                                    </div>
+                                  </div>
+                                  <div class="profile-activity clearfix">
+                                    <div style="padding-right: 0.45em"><span class="label label-danger pull-right margin-10"><i class="icon-arrow-down"> 13.5</i></span><a class="user orange">SFRM</a>
+                                      <h4 class="grey no-padding">Safaricom</h4>
+                                    </div>
+                                  </div>
+                                  <div class="profile-activity clearfix">
+                                    <div style="padding-right: 0.45em"><span class="label label-danger pull-right margin-10"><i class="icon-arrow-down"> 14.5</i></span><a class="user orange">SFRM</a>
+                                      <h4 class="grey no-padding">Safaricom</h4>
+                                    </div>
+                                  </div>
+                                  <div class="profile-activity clearfix">
+                                    <div style="padding-right: 0.45em"><span class="label label-danger pull-right margin-10"><i class="icon-arrow-down"> 15.5</i></span><a class="user orange">SFRM</a>
+                                      <h4 class="grey no-padding">Safaricom</h4>
+                                    </div>
+                                  </div>
+                                  <div class="profile-activity clearfix">
+                                    <div style="padding-right: 0.45em"><span class="label label-danger pull-right margin-10"><i class="icon-arrow-down"> 16.5</i></span><a class="user orange">SFRM</a>
+                                      <h4 class="grey no-padding">Safaricom</h4>
+                                    </div>
+                                  </div>
+                                  <div class="profile-activity clearfix">
+                                    <div style="padding-right: 0.45em"><span class="label label-danger pull-right margin-10"><i class="icon-arrow-down"> 17.5</i></span><a class="user orange">SFRM</a>
+                                      <h4 class="grey no-padding">Safaricom</h4>
+                                    </div>
+                                  </div>
+                                  <div class="profile-activity clearfix">
+                                    <div style="padding-right: 0.45em"><span class="label label-danger pull-right margin-10"><i class="icon-arrow-down"> 18.5</i></span><a class="user orange">SFRM</a>
+                                      <h4 class="grey no-padding">Safaricom</h4>
+                                    </div>
+                                  </div>
+                                  <div class="profile-activity clearfix">
+                                    <div style="padding-right: 0.45em"><span class="label label-danger pull-right margin-10"><i class="icon-arrow-down"> 19.5</i></span><a class="user orange">SFRM</a>
+                                      <h4 class="grey no-padding">Safaricom</h4>
+                                    </div>
+                                  </div>
+                                  <div class="profile-activity clearfix">
+                                    <div style="padding-right: 0.45em"><span class="label label-danger pull-right margin-10"><i class="icon-arrow-down"> 20.5</i></span><a class="user orange">SFRM</a>
+                                      <h4 class="grey no-padding">Safaricom</h4>
+                                    </div>
+                                  </div>
+                                  <div class="profile-activity clearfix">
+                                    <div style="padding-right: 0.45em"><span class="label label-danger pull-right margin-10"><i class="icon-arrow-down"> 21.5</i></span><a class="user orange">SFRM</a>
+                                      <h4 class="grey no-padding">Safaricom</h4>
+                                    </div>
+                                  </div>
+                                  <div class="profile-activity clearfix">
+                                    <div style="padding-right: 0.45em"><span class="label label-danger pull-right margin-10"><i class="icon-arrow-down"> 22.5</i></span><a class="user orange">SFRM</a>
+                                      <h4 class="grey no-padding">Safaricom</h4>
+                                    </div>
+                                  </div>
+                                  <div class="profile-activity clearfix">
+                                    <div style="padding-right: 0.45em"><span class="label label-danger pull-right margin-10"><i class="icon-arrow-down"> 23.5</i></span><a class="user orange">SFRM</a>
+                                      <h4 class="grey no-padding">Safaricom</h4>
+                                    </div>
+                                  </div>
+                                  <div class="profile-activity clearfix">
+                                    <div style="padding-right: 0.45em"><span class="label label-danger pull-right margin-10"><i class="icon-arrow-down"> 24.5</i></span><a class="user orange">SFRM</a>
+                                      <h4 class="grey no-padding">Safaricom</h4>
+                                    </div>
+                                  </div>
+                                  <div class="profile-activity clearfix">
+                                    <div style="padding-right: 0.45em"><span class="label label-danger pull-right margin-10"><i class="icon-arrow-down"> 25.5</i></span><a class="user orange">SFRM</a>
+                                      <h4 class="grey no-padding">Safaricom</h4>
+                                    </div>
+                                  </div>
+                                  <div class="profile-activity clearfix">
+                                    <div style="padding-right: 0.45em"><span class="label label-danger pull-right margin-10"><i class="icon-arrow-down"> 26.5</i></span><a class="user orange">SFRM</a>
+                                      <h4 class="grey no-padding">Safaricom</h4>
+                                    </div>
+                                  </div>
+                                  <div class="profile-activity clearfix">
+                                    <div style="padding-right: 0.45em"><span class="label label-danger pull-right margin-10"><i class="icon-arrow-down"> 27.5</i></span><a class="user orange">SFRM</a>
+                                      <h4 class="grey no-padding">Safaricom</h4>
+                                    </div>
+                                  </div>
+                                  <div class="profile-activity clearfix">
+                                    <div style="padding-right: 0.45em"><span class="label label-danger pull-right margin-10"><i class="icon-arrow-down"> 28.5</i></span><a class="user orange">SFRM</a>
+                                      <h4 class="grey no-padding">Safaricom</h4>
+                                    </div>
+                                  </div>
+                                  <div class="profile-activity clearfix">
+                                    <div style="padding-right: 0.45em"><span class="label label-danger pull-right margin-10"><i class="icon-arrow-down"> 29.5</i></span><a class="user orange">SFRM</a>
+                                      <h4 class="grey no-padding">Safaricom</h4>
+                                    </div>
+                                  </div>
+                                  <div class="profile-activity clearfix">
+                                    <div style="padding-right: 0.45em"><span class="label label-danger pull-right margin-10"><i class="icon-arrow-down"> 30.5</i></span><a class="user orange">SFRM</a>
+                                      <h4 class="grey no-padding">Safaricom</h4>
+                                    </div>
+                                  </div>
+                                  <div class="profile-activity clearfix">
+                                    <div style="padding-right: 0.45em"><span class="label label-danger pull-right margin-10"><i class="icon-arrow-down"> 31.5</i></span><a class="user orange">SFRM</a>
+                                      <h4 class="grey no-padding">Safaricom</h4>
+                                    </div>
+                                  </div>
+                                  <div class="profile-activity clearfix">
+                                    <div style="padding-right: 0.45em"><span class="label label-danger pull-right margin-10"><i class="icon-arrow-down"> 32.5</i></span><a class="user orange">SFRM</a>
+                                      <h4 class="grey no-padding">Safaricom</h4>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!--Company Details populated here-->
+                        <div class="col-xs-12 col-sm-7 border-left hidden-xs">
+                          <div class="row">
+                            <div class="col-xs-12 col-sm-4"><span class="profile-pic"><img src="/assets/avatars/profile-pic.jpg" class="img-responsive"></span>
+                              <div class="space space-10"></div>
+                              <div class="label label-lg label-success block">Safaricom</div>
+                            </div>
+                            <div class="col-xs-12 col-sm-8">
+                              <div class="widget-box transparent">
+                                <div class="widget-header widget-header-flat widget-header-small">
+                                  <h4 class="bigger lighter orange"><i class="icon-check bigger-72"></i>A little about the company</h4>
+                                </div>
+                                <div class="widget-body">
+                                  <div class="widget-main bigger">
+                                    <p>My job is mostly lorem ipsuming and dolor sit ameting as long as consectetur adipiscing elit.</p>
+                                    <p>Sometimes quisque commodo massa gets in the way and sed ipsum porttitor facilisisp The best thing about my job is that vestibulum id ligula porta felis euismod and nullam quis risus eget urna mollis ornare.</p>
+                                    <p>Thanks for visiting my profile.</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--The confirmation participants-->
+                <div id="step-2-ordering" class="step-pane">
+                  <div class="space space-15"></div>
+                  <form id="validate-form" method="post" novalidate class="form-horizontal">
+                    <!-- first password input-->
+                    <div class="form-group">
+                      <label for="no-of-shares" class="control-label col-xs-12 col-sm-3 no-padding-right">No. of shares</label>
+                      <div class="col-xs-12 col-sm-7">
+                        <div class="clearfix">
+                          <input id="no-of-shares" type="number" name="no-of-shares" class="form-control">
+                        </div>
+                      </div>
+                      <div class="space space-15"></div>
+                    </div>
+                    <!-- repeat password-->
+                    <fieldset disabled="disabled">
+                      <div class="form-group">
+                        <label for="disabledOrder" class="control-label col-xs-12 col-sm-3 no-padding-right"><strong>Type of order</strong></label>
+                        <div class="col-xs-12 col-sm-7">
+                          <div class="clearfix">
+                            <select id="disabledOrder" name="disabledOrder" class="form-control">
+                              <option>disabledOrder</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="space space-15"></div>
+                      </div>
+                    </fieldset>
+                    <div class="form-group">
+                      <label for="reason" class="control-label col-xs-12 col-sm-3 no-padding-right"><strong>Reason:</strong></label>
+                      <div class="col-xs-12 col-sm-7">
+                        <div class="clearfix">
+                          <textarea id="reason" rows="3" name="reason" class="form-control"></textarea>
+                        </div>
+                      </div>
+                      <div class="space space-15"></div>
+                    </div>
+                  </form>
+                </div>
+                <!--Use JUMBOTRON to be more specific about this-->
+                <div id="step-3-confirm" class="step-pane">
+                  <div class="jumbotron smaller">
+                    <h2>The hard part is over.</h2>
+                    <p>So, if you are sure of the choise of company and value of shares you have specified, please click the <span class="label label-success label-md">confirm  </span>button to finish up.</p>
+                    <p>If not! You can always go back by pressing the <span class="label label-md">prev  </span>button.</p>
+                    <p>Thank you.</p>
+                  </div>
+                </div>
+              </div>
+              <!--The modal controls are here, the foooter part-->
+              <div class="modal-footer wizard-actions">
+                <button class="btn btn-sm btn-prev"><i class="icon-arrow-left"></i> Prev</button>
+                <button data-last="Confirm " class="btn btn-sm btn-success btn-next"><i class="icon-arrow-right"></i> Next</button>
+                <button data-dismiss="modal" class="btn btn-sm btn-danger pull-left"><i class="icon-remove"></i> Cancel</button>
+                <button data-role="show contest" class="btn btn-sm btn-info pull-left"><i class="icon-trophy"></i>Big League Contest</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

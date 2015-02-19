@@ -1,0 +1,127 @@
+//Content in the middle of the app
+div.main-content
+
+	//The page header
+	div.breadcrumbs#breadcrumbs.breadcrumbs-fixed
+		ul.breadcrumb
+			li.orange
+				i.icon-home.home-icon
+				a.orange(href="") Home
+			li.active Trading Deck
+
+	div.page-content
+		div.vspace-20.hidden-xs.hidden-sm
+		div.page-header
+			h1.orange Leagues
+				small: i.icon-double-angle-right
+					|  Listing
+
+		div.row
+			div.col-sm-12
+				//The leagues will be listed here
+				div.row
+					div.col-sm-12
+						//the listing
+						div.row
+							//Has three tabs
+							div.tabbable
+								ul.nav.nav-tabs.padding-18
+									li.active
+										a(data-toggle="tab", href="#leagues")
+											i.icon-trophy.bigger-120.blue
+											|  Leagues
+									li
+										a(data-toggle="tab", href="#myleagues")
+											i.icon-user.bigger-120
+											|  My Leagues
+									li
+										a(data-toggle="tab", href="#sponsoredleagues")
+											i.icon-certificate.bigger-120.orange
+											|  Sponsored Leagues
+
+								div.tab-content.no-border.padding-18
+									//General leagues listing
+									div.tab-pane.active#leagues
+										- for(w=0; w<6; w++) {
+										div.col-md-4#widget-container-span
+											div.widget-box.light-border
+												div.widget-header.header-color-orange
+													h4.lighter.white
+														i.icon-star
+														|  League Name
+												div.widget-body
+													div.widget-main.no-padding
+														table.table.table-striped.no-hover
+															tbody
+																tr
+																	td No. of participants
+																	td: b.badge.badge-light 53
+																- var titles = ["Start", "End"]
+																- for(x=0; x<titles.length; x++) {
+																tr
+																	td #{titles[x]}
+																	td: b.blue.momenttime
+																- }
+																tr
+																	td Description
+																	td: span Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis.
+													div.widget-toolbar.clearfix.padding-8
+														p
+															a(href="#", role="button").btn.btn-info.btn-xs Invite	
+															a(href="#", role="button").btn.btn-success.btn-xs Join
+
+										div.vspace-30.hidden-md.hidden-lg
+										- }
+
+									//Leagues the user has opted into
+									div.tab-pane#myleagues
+										div.col-sm-4.widget-container-span
+											div.widget-box
+												div.widget-header.header-color-orange
+													h4.lighter.white
+														i.icon-star
+														|  League Name
+												div.widget-body
+													div.widget-main.no-padding
+														table.table.table-striped.no-hover
+															tbody
+																tr
+																	td No. of participants
+																	td: b.badge.badge-light 53
+																- var titles = ["Start", "End"]
+																- for(x=0; x<titles.length; x++) {
+																tr
+																	td #{titles[x]}
+																	td: b.blue.momenttime
+																- }
+																tr
+																	td Description
+																	td: span Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis.
+													div.widget-toolbar.clearfix
+														p
+															a(href="#", role="button").btn.btn-info.btn-xs View Contest	
+															a(href="#", role="button").btn.btn-success.btn-xs View Portfolio
+
+									div.tab-pane#sponsoredleagues
+										div.col-sm-12.widget-container-span
+											//If no Leagues are available for listing, show jumbotron
+											div.jumbotron
+												h2 Sponsored Leagues
+												p.grey no sponsored leagues are available at the moment.
+												p: a.btn.btn-warning.btn-lg(role="button") Add League
+
+									// For time example
+									script(type='text/javascript')
+										| var time = moment().add('days', 1).format('ddd D, MMM YYYY')
+										| $('.momenttime').html(time);
+
+			//Possible for the ads
+				div.col-sm-3
+				div.row
+					div.col-xs-12
+						//The Ad
+						a(href="").thumbnail
+							img.img-responsive(src="/assets/avatars/profile-pic.jpg", alt="Ad")
+						div.space-20
+						a(href="").thumbnail
+							img.img-responsive(src="/assets/avatars/profile-pic.jpg", alt="Ad")

@@ -1,0 +1,52 @@
+extends includes/header
+
+block content
+	// The main content begins here
+	div.main-container#main-container
+		div.main-container-inner
+			
+			//The menu sidebar
+			include includes/sidebar
+
+			//Content in the middle of the app
+			div.main-content
+
+				//The page header
+				div.breadcrumbs#breadcrumbs.breadcrumbs-fixed
+					ul.breadcrumb
+						li
+							i.icon-home.home-icon
+							a(href="") Home
+						li.active Buy or Sell
+
+				div.page-content
+					div.vspace-20.hidden-xs.hidden-sm
+
+					//- //All the contest will be listed here, with the active one on the button
+					//- div.btn-group.pull-right
+					//- 	button.btn.btn-warning.btn-md Big League Contest
+					//- 	button.btn.btn-warning.btn-md.dropdown-toggle(data-toggle="dropdown")
+					//- 		span.icon-caret-down.icon-only.bigger-75
+					//- 		span.sr-only Toggle dropdown
+					//- 	ul.dropdown-menu.dropdown-yellow.dropdown-warning(role="menu")
+					//- 		li: a(href="#") Another Contest
+					//- 		li.divider
+					//- 		li: a(href="#") Another Contest
+					//- 		li.divider
+					//- 		li: a(href="#") Another Contest
+
+					//- div.page-header
+					//- 	h1.orange Buy or Sell
+					//- 		small: i.icon-double-angle-right
+					//- 			|  NSE Market Listing
+
+					//- All relevant content starts here (for user)
+					div.row
+						//Main Dashboard stuff
+						div.col-sm-12
+							div.row
+								// Trading dashboard centralised
+								div.col-xs-12(role="user relevant trading data")
+
+									//Get the modal
+									include containers/newmarketmodal

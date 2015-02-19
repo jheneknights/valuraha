@@ -1,0 +1,1137 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"pa",
+				"padding-right"
+			],
+			[
+				"con",
+				"controller"
+			],
+			[
+				"sc",
+				"scope"
+			],
+			[
+				"Post",
+				"PostsController"
+			],
+			[
+				"bw",
+				"bower_components"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"rem",
+				"removeClass〔function〕"
+			],
+			[
+				"text",
+				"text-center"
+			],
+			[
+				"pane",
+				"panel-body"
+			],
+			[
+				"panel",
+				"panel-default"
+			],
+			[
+				"form",
+				"form-control"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"col-xs-",
+				"col-xs-12"
+			],
+			[
+				"Catego",
+				"Categories"
+			],
+			[
+				"Media",
+				"media-heading"
+			],
+			[
+				"media",
+				"media-object"
+			],
+			[
+				"boot",
+				"bootstrap"
+			],
+			[
+				"nav",
+				"navbar-toggle"
+			],
+			[
+				"imp",
+				"!important〔value〕"
+			],
+			[
+				"pre_",
+				"preg_replace〔function〕"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"sto",
+				"storeIPN  (function)"
+			],
+			[
+				"Orr",
+				"OrdersController  (class)"
+			],
+			[
+				"get",
+				"getOrderStatus  (function)"
+			],
+			[
+				"funct",
+				"function 	Language Construct"
+			],
+			[
+				"tab",
+				"tabId"
+			],
+			[
+				"reso",
+				"response"
+			],
+			[
+				"Order",
+				"OrdersController  (class)"
+			],
+			[
+				"fon",
+				"font-weight:   (property)"
+			],
+			[
+				"total",
+				"total_usd"
+			],
+			[
+				"order",
+				"order_details"
+			],
+			[
+				"item",
+				"item_list  (variable)"
+			],
+			[
+				"ceil",
+				"ceil()	standard Function"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"tot",
+				"total_amount"
+			],
+			[
+				"sho",
+				"shopping_cart"
+			],
+			[
+				"pric",
+				"price_usd"
+			],
+			[
+				"ite",
+				"item"
+			],
+			[
+				"item_",
+				"item_list"
+			],
+			[
+				"user",
+				"userID"
+			],
+			[
+				"fun",
+				"fun	function …"
+			],
+			[
+				"padding",
+				"padding:   (property)"
+			],
+			[
+				"trigg",
+				"triggerNextCheckUp"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"CSS",
+				"CSSFile"
+			],
+			[
+				"ta",
+				"tab"
+			],
+			[
+				"coll",
+				"collectedData"
+			],
+			[
+				"test",
+				"test_cart"
+			],
+			[
+				"update",
+				"updateStatus"
+			],
+			[
+				"rela",
+				"related_host"
+			],
+			[
+				"val",
+				"validURLs"
+			],
+			[
+				"checkI",
+				"checkinThis"
+			],
+			[
+				"but",
+				"button-warning"
+			],
+			[
+				"vm-",
+				"vm-modal"
+			],
+			[
+				"ex",
+				"extend"
+			],
+			[
+				"err",
+				"errorDetails"
+			],
+			[
+				"resp",
+				"responseText"
+			],
+			[
+				"eror",
+				"errorDetails"
+			],
+			[
+				"col",
+				"collectedData"
+			],
+			[
+				"func",
+				"function"
+			],
+			[
+				"res",
+				"responsetext"
+			],
+			[
+				"erro",
+				"errorDetails"
+			],
+			[
+				"er",
+				"errorDetails"
+			],
+			[
+				"sub",
+				"submitErrors"
+			],
+			[
+				"vitumob-pop",
+				"vitumob-popup-form"
+			],
+			[
+				"vitu",
+				"vitumob-user-form"
+			],
+			[
+				"su",
+				"success"
+			],
+			[
+				"pl",
+				"politeErrorResponse"
+			],
+			[
+				"doc",
+				"document"
+			],
+			[
+				"to",
+				"toggle"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"f",
+				"fff"
+			],
+			[
+				"vm-mod",
+				"vm-modal-header"
+			],
+			[
+				"bord",
+				"border-color"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"parse",
+				"parseInt  (function)"
+			],
+			[
+				"check",
+				"checkThis"
+			],
+			[
+				"tri",
+				"triggerNextCheckUp"
+			],
+			[
+				"tigg",
+				"triggerNextCheckUp"
+			],
+			[
+				"chec",
+				"checkThis"
+			],
+			[
+				"per",
+				"periodInMinutes"
+			],
+			[
+				"i",
+				"important"
+			],
+			[
+				"bash",
+				"bash_profile"
+			],
+			[
+				"host",
+				"hostURL"
+			],
+			[
+				"chi",
+				"children  (function)"
+			],
+			[
+				"he",
+				"height  (function)"
+			],
+			[
+				"hea",
+				"headerBar"
+			],
+			[
+				"fad",
+				"fadeToggle  (function)"
+			],
+			[
+				"togg",
+				"fadeToggle  (function)"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"vitumob-logo",
+				"vitumob-logo-transparent3"
+			],
+			[
+				"li",
+				"link	Tag"
+			],
+			[
+				"auto",
+				"autovalidate"
+			],
+			[
+				"tet",
+				"testProcessCart"
+			],
+			[
+				"do",
+				"document"
+			],
+			[
+				"va",
+				"valid"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"fore",
+				"foreach	foreach …"
+			],
+			[
+				"vit",
+				"vitumob"
+			],
+			[
+				"proce",
+				"processCart"
+			],
+			[
+				"wor",
+				"worldrugbyshop"
+			],
+			[
+				"suc",
+				"success"
+			],
+			[
+				"vi",
+				"vitumob-blind"
+			],
+			[
+				"vt",
+				"vitumob-header"
+			],
+			[
+				"Vit",
+				"VituMob"
+			],
+			[
+				"re",
+				"reason"
+			],
+			[
+				"me",
+				"message"
+			],
+			[
+				"submi",
+				"submitErrors"
+			],
+			[
+				"q",
+				"querySelector"
+			],
+			[
+				"inde",
+				"indexOf"
+			],
+			[
+				"sc-pri",
+				"sc-product-price"
+			],
+			[
+				"send",
+				"sendResponse"
+			],
+			[
+				"ad",
+				"addListener"
+			],
+			[
+				"homepage",
+				"homepage"
+			],
+			[
+				"sec",
+				"section"
+			],
+			[
+				"page",
+				"page-menu"
+			],
+			[
+				"sect",
+				"section-menu"
+			],
+			[
+				"inn",
+				"innerHeight  (variable)"
+			],
+			[
+				"Redirector",
+				"RedirectorPage  (class)"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"setMax",
+				"setAllowedMaxFileNumber  (function)"
+			],
+			[
+				"remove",
+				"removeClass  (function)"
+			],
+			[
+				"notif",
+				"notification-bar"
+			],
+			[
+				"vis",
+				"visited  (pseudo-class)"
+			],
+			[
+				"Min",
+				"min-width"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app.js",
+			"settings":
+			{
+				"buffer_size": 1200,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 500,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"the",
+				"Themr: List themes"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"th",
+				"Themr: List themes"
+			],
+			[
+				"them",
+				"Themr: List themes"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"br",
+				"Preferences: Browse Packages"
+			],
+			[
+				"brow",
+				"Preferences: Browse Packages"
+			],
+			[
+				"insa",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"bro",
+				"Preferences: Browse Packages"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"sett",
+				"Preferences: Settings - User"
+			],
+			[
+				"packa",
+				"Preferences: Browse Packages"
+			],
+			[
+				"open",
+				"Package Control: Satisfy Dependencies"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"Laravel ",
+				"Laravel Generate: Migration"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"forma",
+				"Format Code"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"",
+				"API-Completion-Package: Open Github project url"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 453.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/jheneknights/Applab/webapps/valuraha"
+	],
+	"file_history":
+	[
+		"/Users/jheneknights/Applab/webapps/valuraha/.gitignore",
+		"/Users/jheneknights/Applab/webapps/valuraha/Procfile",
+		"/Users/jheneknights/Applab/webapps/valuraha/package.json",
+		"/Users/jheneknights/Applab/webapps/valuraha/README.md",
+		"/Users/jheneknights/phplab/laravel/secretly/front-end/bower_components/bootflat/README.md",
+		"/Users/jheneknights/phplab/laravel/secretly/front-end/bower_components/bootstrap-material-design/bootstrap-elements.html",
+		"/Users/jheneknights/phplab/laravel/secretly/front-end/index.html",
+		"/Users/jheneknights/phplab/laravel/secretly/front-end/test/index.html",
+		"/Users/jheneknights/phplab/laravel/secretly/composer.json",
+		"/Users/jheneknights/phplab/laravel/secretly/front-end/bower_components/bootstrap-material-design/dist/css/material-wfont.css",
+		"/Users/jheneknights/phplab/laravel/secretly/front-end/app/css/shapes.min.css",
+		"/Users/jheneknights/phplab/laravel/secretly/front-end/test/css/app.full.min.css",
+		"/Users/jheneknights/phplab/laravel/secretly/front-end/bower_components/bootstrap-material-design/dist/test.html",
+		"/Users/jheneknights/phplab/laravel/secretly/app/models/User.php",
+		"/Users/jheneknights/phplab/laravel/secretly/app/config/app.php",
+		"/Users/jheneknights/.zshrc",
+		"/Users/jheneknights/phplab/laravel/secretly/app/views/hello.php",
+		"/Users/jheneknights/phplab/laravel/secretly/app/config/local/database.php",
+		"/Users/jheneknights/phplab/laravel/secretly/app/config/database.php",
+		"/Users/jheneknights/phplab/laravel/secretly/app/config/view.php",
+		"/Users/jheneknights/phplab/laravel/biblicol.com/app/views/hello.blade.php",
+		"/Users/jheneknights/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/jheneknights/phplab/laravel/biblicol.com/app/views/layouts/master.blade.php",
+		"/Users/jheneknights/phplab/laravel/biblicol.com/bootstrap/start.php",
+		"/Users/jheneknights/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/jheneknights/phplab/laravel/biblicol.com/composer.json",
+		"/Users/jheneknights/phplab/laravel/biblicol.com/app/routes.php",
+		"/Users/jheneknights/phplab/laravel/biblicol.com/app/views/subscribe/index.blade.php",
+		"/Users/jheneknights/phplab/laravel/biblicol.com/app/config/database.php",
+		"/Users/jheneknights/phplab/laravel/biblicol.com/public/css/app.css",
+		"/Users/jheneknights/phplab/laravel/biblicol.com/app/controllers/BooksController.php",
+		"/Users/jheneknights/phplab/laravel/biblicol.com/.gitignore",
+		"/Users/jheneknights/.ssh/known_hosts",
+		"/Users/jheneknights/phplab/laravel/biblicol.com/mariadb-credentials.txt",
+		"/Users/jheneknights/phplab/laravel/biblicol.com/app/config/local/database.php",
+		"/Users/jheneknights/phplab/laravel/biblicol.com/app/config/stage/database.php",
+		"/Users/jheneknights/phplab/laravel/biblicol.com/app/config/app.php",
+		"/Users/jheneknights/phplab/laravel/biblicol.com/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php",
+		"/Users/jheneknights/phplab/laravel/biblicol.com/app/storage/meta/services.json",
+		"/Users/jheneknights/phplab/laravel/biblicol.com/composer.dev.json",
+		"/Users/jheneknights/phplab/laravel/biblicol.com/Procfile",
+		"/Users/jheneknights/phplab/laravel/biblicol.com/# Fortrabbit Access Credentials.txt",
+		"/Users/jheneknights/phplab/laravel/biblicol.com/public/.htaccess",
+		"/Users/jheneknights/phplab/laravel/biblicol.com/app/config/stage/app.php",
+		"/Users/jheneknights/phplab/laravel/biblicol.com/app/config/local/app.php",
+		"/Users/jheneknights/phplab/laravel/biblicol.com/app/storage/logs/laravel.log",
+		"/Users/jheneknights/.bash_profile",
+		"/Users/jheneknights/phplab/laravel/biblicol.com/app/database/migrations/2014_10_13_131441_create_bible_table.php",
+		"/Users/jheneknights/phplab/laravel/biblicol.com/app/controllers/CommentsController.php",
+		"/Users/jheneknights/phplab/laravel/biblicol.com/app/database/migrations/2015_01_27_110046_create_Comments_table.php",
+		"/Users/jheneknights/phplab/laravel/biblicol.com/app/models/Subscriber.php",
+		"/Users/jheneknights/phplab/laravel/biblicol.com/app/database/migrations/2014_10_17_183359_create_subscribers_table.php",
+		"/Users/jheneknights/phplab/laravel/biblicol.com/app/controllers/SubscribersController.php",
+		"/Users/jheneknights/phplab/laravel/biblicol.com/app/models/Comment.php",
+		"/Users/jheneknights/phplab/laravel/biblicol.com/app/views/Comments/index.blade.php",
+		"/etc/apache2/httpd.conf",
+		"/Users/jheneknights/phplab/info.php",
+		"/Users/jheneknights/phplab/laravel/biblicol.com/app/controllers/SearchController.php",
+		"/Users/jheneknights/phplab/laravel/biblicol.com/app/views/partials/emailform.blade.php",
+		"/Users/jheneknights/phplab/laravel/biblicol.com/app/views/partials/searchform.blade.php",
+		"/Users/jheneknights/phplab/laravel/biblicol.com/_ide_helper.php",
+		"/Users/jheneknights/phplab/laravel/spark75.com/app/config/local/app.php",
+		"/Users/jheneknights/phplab/laravel/spark75.com/app/config/app.php",
+		"/Users/jheneknights/phplab/laravel/spark75.com/app/config/local/database.php",
+		"/Users/jheneknights/phplab/laravel/spark75.com/spark75.sublime-workspace",
+		"/Volumes/My Stuff/Sites/lab/vitumob/server/vitumob/app/controllers/ItemsController.php",
+		"/Volumes/My Stuff/Sites/lab/vitumob/server/vitumob/app/controllers/HomeController.php",
+		"/Volumes/My Stuff/Sites/lab/vitumob/server/vitumob/app/controllers/ErrorFallbackController.php",
+		"/Volumes/My Stuff/Sites/lab/vitumob/server/vitumob/app/controllers/BaseController.php",
+		"/Volumes/My Stuff/Sites/lab/vitumob/server/vitumob/app/controllers/AuthorizedController.php",
+		"/Volumes/My Stuff/Sites/lab/vitumob/server/vitumob/app/controllers/UserController.php",
+		"/Volumes/My Stuff/Sites/lab/vitumob/server/vitumob/app/controllers/PayPalController.php",
+		"/Volumes/My Stuff/Sites/lab/vitumob/server/vitumob/app/controllers/OrdersController.php",
+		"/Volumes/My Stuff/Sites/lab/vitumob/server/vitumob/app/models/User.php",
+		"/Volumes/My Stuff/Sites/lab/vitumob/server/vitumob/app/filters.php",
+		"/Volumes/My Stuff/Sites/lab/vitumob/server/vitumob/app/views/mpesa.blade.php",
+		"/Volumes/My Stuff/Sites/lab/vitumob/server/vitumob/composer.json",
+		"/Volumes/My Stuff/Sites/lab/vitumob/server/vitumob/app/views/checkout.blade.php",
+		"/Volumes/My Stuff/Sites/prittynote/pay/payments.php",
+		"/Volumes/My Stuff/Sites/lab/vitumob/server/vitumob/app/config/paypal.php",
+		"/Volumes/My Stuff/Sites/lab/vitumob/chrome-extension.pem",
+		"/Users/jheneknights/Downloads/app/app/routes.php",
+		"/Volumes/My Stuff/Sites/lab/vitumob/server/vitumob/paypalController1.text",
+		"/Volumes/My Stuff/Sites/lab/vitumob/server/vitumob/public/index.php",
+		"/Volumes/My Stuff/Sites/lab/vitumob/server/vitumob/app/config/local/app.php",
+		"/Volumes/My Stuff/Sites/lab/vitumob/server/vitumob/app/config/app.php",
+		"/Volumes/My Stuff/Sites/lab/vitumob/server/vitumob/app/config/stage/app.php",
+		"/Volumes/My Stuff/Sites/lab/vitumob/server/vitumob/app/config/database.php",
+		"/Volumes/My Stuff/Sites/lab/vitumob/server/vitumob/app/start/artisan.php",
+		"/Volumes/My Stuff/Sites/lab/vitumob/server/vitumob/app/start/global.php",
+		"/Volumes/My Stuff/Sites/lab/vitumob/server/vitumob/app/start/local.php",
+		"/Volumes/My Stuff/Sites/lab/vitumob/server/vitumob/app/views/404.blade.php",
+		"/Volumes/My Stuff/Sites/lab/vitumob/server/vitumob/app/views/orders/complete.blade.php",
+		"/Volumes/My Stuff/Sites/lab/vitumob/server/vitumob/app/paypal.php",
+		"/Volumes/My Stuff/Sites/lab/vitumob/server/vitumob/composer",
+		"/Volumes/My Stuff/Sites/lab/vitumob/server/vitumob/composer.lock",
+		"/Volumes/My Stuff/Sites/lab/vitumob/README.md",
+		"/Volumes/My Stuff/Sites/prittynote/need/config.php",
+		"/Users/jheneknights/Library/Application Support/Sublime Text 2/Packages/Theme - Eightlime/Eightlime Dark.sublime-theme",
+		"/Users/jheneknights/Library/Application Support/Sublime Text 2/Packages/Theme - Piatto/Piatto Light 3.sublime-theme",
+		"/Users/jheneknights/Library/Application Support/Sublime Text 2/Packages/Theme - Piatto/README.md",
+		"/Users/jheneknights/Library/Application Support/Sublime Text 2/Packages/Theme - Spacefunk/Spacefunk (Grey Tuesday).sublime-theme",
+		"/Users/jheneknights/Library/Application Support/Sublime Text 2/Packages/Theme - Spacefunk/Spacefunk/Widget - Spacefunk (Grey Tuesday).stTheme",
+		"/Users/jheneknights/Library/Application Support/Sublime Text 2/Packages/Theme - itg.flat/README.md",
+		"/Volumes/My Stuff/Sites/lab/vitumob/server/vitumob/app/views/beta.blade.php",
+		"/Volumes/My Stuff/Sites/lab/vitumob/chrome-extension/2.5/extension.js",
+		"/Volumes/My Stuff/Sites/lab/vitumob/server/vitumob/app/views/iverilite.blade.php",
+		"/Volumes/My Stuff/Sites/lab/vitumob/server/vitumob/app/routes.php",
+		"/Volumes/My Stuff/Sites/lab/vitumob/server/vitumob/app/views/cart.blade.php",
+		"/Volumes/My Stuff/Sites/lab/vitumob/server/vitumob/app/models/Functions.php",
+		"/Volumes/My Stuff/Sites/lab/vitumob/server/vitumob/app/views/layouts/scaffold.blade.php",
+		"/Volumes/My Stuff/Sites/lab/vitumob/server/public_html/vitumob.com/index.php",
+		"/Users/jheneknights/Library/Application Support/Sublime Text 2/Packages/CodeFormatter/CodeFormatter.sublime-settings",
+		"/Volumes/My Stuff/Sites/lab/vitumob/server/vitumob/app/config/local/database.php",
+		"/Volumes/My Stuff/Sites/lab/vitumob/chrome-extension/2.4/extension.js",
+		"/Volumes/My Stuff/Sites/lab/vitumob/chrome-extension/2.5/resources/js/d06aad07c45265f1a8a809c3618a037d3aa09767.js",
+		"/Volumes/My Stuff/Sites/lab/vitumob/vitumob.com/app/models/Functions.php",
+		"/Volumes/My Stuff/Sites/lab/vitumob/vitumob.com/app/controllers/OrdersController.php",
+		"/Volumes/My Stuff/Sites/lab/vitumob/vitumob.com/app/controllers/ItemsController.php",
+		"/Volumes/My Stuff/Sites/lab/vitumob/chrome-extension/2.5/background.js",
+		"/Volumes/My Stuff/Sites/lab/vitumob/chrome-extension/2.4/background.js",
+		"/Volumes/My Stuff/Sites/lab/vitumob/vitumob.com/composer.json",
+		"/Volumes/My Stuff/Sites/lab/vitumob/vitumob.com/app/models/User.php",
+		"/Volumes/My Stuff/Sites/lab/vitumob/vitumob.com/app/models/Item.php",
+		"/Volumes/My Stuff/Sites/lab/vitumob/chrome-extension/2.5/manifest.json",
+		"/Volumes/My Stuff/Sites/lab/vitumob/vitumob.com/app/database/seeds/OrdersTableSeeder.php",
+		"/Volumes/My Stuff/Sites/lab/vitumob/vitumob.com/app/routes.php",
+		"/Volumes/My Stuff/Sites/lab/vitumob/vitumob.com/app/database/migrations/2013_08_29_062339_create_items_table.php"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"<open folders>",
+			"/Volumes/My Stuff/Sites/lab/vitumob/app",
+			"/Users/jheneknights/phplab/silverstripe",
+			"/Users/jheneknights/phplab/silverstripe/framework",
+			"<open folders>",
+			"/Volumes/My Stuff/Websites/lab/obits",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"square",
+			"ripples",
+			"Lato",
+			"10-02-14",
+			"raleway",
+			"Raleway",
+			"SC",
+			"SubmitController",
+			"PostsController",
+			"orange",
+			"default",
+			"post",
+			"name",
+			"post",
+			"list",
+			"SubmitC",
+			"postForm",
+			"fd",
+			"Fool",
+			"This",
+			"frameworks",
+			"posts",
+			"PostsController",
+			"this",
+			"click",
+			"sidr",
+			"window",
+			"document",
+			"body",
+			"scope",
+			"This",
+			"post",
+			"name",
+			"name=\"",
+			"name=",
+			"post",
+			"name",
+			"fullNames",
+			"ng-model=\"Submit.post",
+			"AppController",
+			"post",
+			"postForm",
+			"PostCtr",
+			"post",
+			"show",
+			"post",
+			"this",
+			"list",
+			"post",
+			"list",
+			"submit",
+			"PostsController",
+			"post",
+			"argument",
+			"posts",
+			"list",
+			"PostsController",
+			"post",
+			"name",
+			"Mutai",
+			"Eugene",
+			"Mutai",
+			"Eugene",
+			"Mutai",
+			"Eugene",
+			"this",
+			"post",
+			"app",
+			"var",
+			"secret",
+			"posts",
+			"scope",
+			"frameworks",
+			"this",
+			"app",
+			"votes",
+			"posts",
+			"name: \"some name\",",
+			"osts: \"Cras sit",
+			" posts",
+			"application",
+			"actions",
+			"angular",
+			"header",
+			"this",
+			"app",
+			"deviceready",
+			"'deviceready'",
+			"deviceready",
+			"application",
+			"353535",
+			"label",
+			"red",
+			"heart",
+			"img.media-object.img-circle(style=\"width: 64px; height: 64px;\", data-holder-rendered=\"true\", src=\"data:image/",
+			"img.media-object.img-circle(",
+			"center",
+			"tr\n                                    td",
+			"tr",
+			"href",
+			"=\"\")",
+			"tr",
+			"bottom",
+			".col-xs-12.panel.panel-default",
+			"default",
+			"img.media-object.img-circle(style=\"width: 64px; height: 64px;\", data-holder-rendered=\"true\", src=\"",
+			"PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjEzLjQ2MDkzNzUiIHk9IjMyIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI",
+			"responsive",
+			"Previous",
+			"12",
+			"textarea",
+			"input",
+			"sm",
+			"Categories",
+			"left",
+			"input",
+			"default",
+			"active",
+			"Home",
+			" a(href=\"\") Home",
+			"Brand",
+			"img.media-object.",
+			"awesome",
+			"555",
+			"right",
+			"object",
+			"toggle",
+			"search"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1200,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								610,
+								610
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 500,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								232,
+								232
+							]
+						],
+						"settings":
+						{
+							"auto_complete": true,
+							"syntax": "Packages/Seti_UI/Prefs/Langs/npm JSON.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.exec":
+	{
+		"height": 114.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "valuraha-ui.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"file",
+				"vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php"
+			],
+			[
+				"filesys",
+				"vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php"
+			],
+			[
+				"",
+				"themes/simple/templates/Page.ss"
+			],
+			[
+				"ace",
+				"assets/css/ace.min.css"
+			],
+			[
+				"sddd",
+				"node_modules/express/node_modules/connect/node_modules/multiparty/node_modules/readable-stream/node_modules/debuglog/README.md"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 260.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

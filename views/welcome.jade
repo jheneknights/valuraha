@@ -1,0 +1,172 @@
+extends includes/header
+
+block content
+
+	style.
+		body{overflow-x: hidden}
+		#bg-overlay, #color-overlay, #welcome-form{position: fixed; top:0; left:0; width:100%; height:100%;}
+		#bg-overlay{z-index: 11}
+		#color-overlay{background-color:#F0591A; filter:alpha(opacity=60); opacity:0.6; z-index:22;}
+		#welcome-form{z-index: 33; position: absolute !important;}
+		.tab-content{background: #fefefe; padding-bottom:0}
+		#form{margin-bottom: 5%}
+		div > h1{padding:0; margin: 0}
+
+	script.
+		$(function(){ 
+			$('#navbar').remove(); 
+			$(window).load(function() { 
+				$('#bg-overlay').css({"background-image": 'url(\'/images/city-1.jpg\')', "background-size": "cover"})
+			});
+		});
+
+	// The main content begins here
+	div.main-container#main-container
+		div.main-container-inner
+			div#welcome-form
+				div.row
+					.col-xs-12
+						h1.center.white.lighter
+							i.icon-compass &nbsp;
+							| Valuraha
+						h5.center.white.lighter
+							| Master trading on NSE...risk free!
+
+					div#form.col-lg-4.col-lg-offset-4.col-sm-8.col-sm-offset-2.col-xs-12
+						div.vspace-10.hidden-xs.hidden-sm
+						div.widget-box.light-border.visible.login-box#login-box
+							.widget-header.widget-header-flat.header-color-orange.no-padding
+								//Trading dashboard
+								div.tabbable.tabs.left
+									ul.nav.nav-tabs.tab-color-blue.padding-10.background-blue.orange#myTabs
+										li.active: a(data-toggle="tab", href="#user-login") 
+											i.orange.icon-lock.bigger-110
+											|  Login
+										li: a(data-toggle="tab", href="#user-signup") 
+											i.green.icon-rocket.bigger-110 
+											|  Sign Up
+										li: a(data-toggle="tab", href="#reset-password")
+											i.red.icon-cog.bigger-110
+											|  Forgot Password
+
+							.widget-body
+								.widget-main
+									div.tab-content
+
+										//Login tab
+										div#user-login.tab-pane.in.active
+											h4.header.orange.bigger.lighter
+												i.icon-lock.orange
+												|  Please Enter your information
+											div.space-6
+											form(action="student/login", method="POST", role="form", style="padding: 1% 0").form-horizontal
+												.form-group
+													label.control-label.col-xs-12.col-sm-3.no-padding-right(for="emailaddress") 
+														| Email Addr.
+													div.col-xs-12.col-sm-8
+														.clearfix
+															input#emailaddress.form-control(type="email", name="emailaddress", placeholder="Your email address...", required)
+
+												.form-group
+													label.control-label.col-xs-12.col-sm-3.no-padding-right(for="encryptedPassword") 
+														| Password
+													div.col-xs-12.col-sm-8
+														.clearfix
+															input#encryptedPassword-login.form-control(type="password", name="encryptedPassword", placeholder="Your password", required)
+												.form-group
+													.col-sm-offset-3.col-sm-5.width-35
+														label
+															input(type="checkbox" class="ace ace-switch ace-switch-5") 
+															small.lbl &nbsp; Remember Me
+														.vspace-10
+														//use button el, "a" is just for presentation
+														a(href="/page/home").btn.btn-warning.btn-sm.btn-next
+															| Log In
+															i.icon-chevron-right.icon-on-right
+
+											div.social-or-login.center
+												span.bigger-110.orange Or login using
+
+											div.social-login.center(style="padding: 1em 0; margin: 0")
+												a.btn.btn-primary.btn-lg: i.icon-facebook.icon2x
+												a.btn.btn-info.btn-lg: i.icon-twitter.icon2x
+												a.btn.btn-danger.btn-lg: i.icon-google-plus.icon2x
+
+										//Sign up tab
+										div#user-signup.tab-pane
+											h4.header.green.bigger.lighter
+												i.icon-rocket.green
+												|  Join the pack
+											div.space-6
+											form(action="student/signup", method="POST", role="form", style="padding: 1% 0").form-horizontal
+												.form-group
+													label.control-label.col-xs-12.col-sm-3.no-padding-right(for="fullnames") 
+														| Full Name
+													div.col-xs-12.col-sm-7
+														.clearfix
+															input#fullnames.form-control(type="text", name="fullnames", required, placeholder="eg. Eugene Mutai")
+
+												.form-group
+													label.control-label.col-xs-12.col-sm-3.no-padding-right(for="idno") 
+														| Student ID No.
+													div.col-xs-12.col-sm-7
+														.clearfix
+															input#idno.form-control(type="text", name="idno", required, placeholder="Your Student ID No.")
+
+												.form-group
+													label.control-label.col-xs-12.col-sm-3.no-padding-right(for="phonenumber") 
+														| Phone No.
+													div.col-xs-12.col-sm-7
+														.clearfix
+															input#phonenumber.form-control(type="text", name="phonenumber", required, placeholder="eg. 0723001575 or 254723001575")
+
+												.form-group
+													label.control-label.col-xs-12.col-sm-3.no-padding-right(for="emailaddress") 
+														| Email Addr.
+													div.col-xs-12.col-sm-7
+														.clearfix
+															input#emailaddress.form-control(type="email", name="emailaddress", required, placeholder="Your email address...")
+
+												.form-group
+													label.control-label.col-xs-12.col-sm-3.no-padding-right(for="encryptedPassword") 
+														| Password
+													div.col-xs-12.col-sm-7
+														.clearfix
+															input#encryptedPassword-signup.form-control(type="password", name="encryptedPassword", required, placeholder="Your password")
+															input(type="hidden", name="_csrf", value="true")
+												.form-group
+													label.control-label.col-xs-12.col-sm-3.no-padding-right(for="confirmPassword") 
+														| Confirm Password
+													div.col-xs-12.col-sm-7
+														.clearfix
+															input#confirmPassword-signup.form-control(type="password", name="confirmPassword", required, placeholder="Confirm password")
+
+												.form-group
+													.col-sm-offset-3.col-sm-3
+														//use button instead on production
+														a.btn.btn-success.btn-sm
+															i.icon-asterisk
+															| Register
+
+										//Reset your password tab
+										div#reset-password.tab-pane
+											h4.header.red.bigger.lighter
+												i.icon-cog.red
+												|  Please enter your email address so as we can send you reseting instructions
+											div.space-10
+											form(action="student/login", method="POST", role="form", style="padding: 1% 0").form-horizontal
+												.form-group
+													label.control-label.col-xs-12.col-sm-3.no-padding-right(for="emailaddress") 
+														| Email Addr.
+													div.col-xs-12.col-sm-8
+														.clearfix
+															input#emailaddress.form-control(type="email", name="emailaddress", placeholder="Your email address...", required)
+
+												.form-group
+													.col-sm-offset-3.col-sm-3
+														button.btn.btn-danger.btn-sm
+															i.icon-cog
+															| Reset Password
+	//This will be OVERLAY
+	div#bg-overlay
+	div#color-overlay

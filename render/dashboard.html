@@ -1,0 +1,641 @@
+
+<!--Content in the middle of the app-->
+<div class="main-content">
+  <!--The page header-->
+  <div id="breadcrumbs" class="breadcrumbs breadcrumbs-fixed">
+    <ul class="breadcrumb">
+      <li><i class="icon-home home-icon"></i><a href="">Home</a></li>
+      <li class="active">Dashboard</li>
+    </ul>
+  </div>
+  <div class="page-content">
+    <div class="vspace-20 hidden-xs hidden-sm"></div>
+    <!--All the contest will be listed here, with the active one on the button-->
+    <div class="btn-group pull-right">
+      <button class="btn btn-warning btn-md">Big League Contest</button>
+      <button data-toggle="dropdown" class="btn btn-warning btn-md dropdown-toggle"><span class="icon-caret-down icon-only bigger-75"></span><span class="sr-only">Toggle dropdown</span></button>
+      <ul role="menu" class="dropdown-menu dropdown-yellow dropdown-warning">
+        <li><a href="#">Another Contest</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Another Contest</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Another Contest</a></li>
+      </ul>
+    </div>
+    <div class="page-header">
+      <h1 class="orange">Dashboard<small><i class="icon-double-angle-right"> Overview & Stats</i></small></h1>
+    </div>
+    <div class="row">
+      <!--Main Dashboard stuff-->
+      <div class="col-sm-9">
+        <div class="row">
+          <!-- Trading dashboard centralised-->
+          <div role="user relevant trading data" class="col-xs-12">
+            <!--Trading dashboard-->
+            <div class="tabbable tabs left">
+              <ul id="myTabs" class="nav nav-tabs tab-color-blue padding-10 background-blue orange">
+                <li class="active"><a data-toggle="tab" href="#shares"><i class="red icon-asterisk bigger-75"></i> Shares</a></li>
+                <li><a data-toggle="tab" href="#bonds"><i class="green icon-circle bigger-75"></i> Bonds</a></li>
+                <li><a data-toggle="tab" href="#loans"><i class="blue icon-money bigger-75"></i> Loans</a></li>
+                <li><a data-toggle="tab" href="#deposits"><i class="black icon-download bigger-75"></i> Fixed Deposits</a></li>
+              </ul>
+              <div class="tab-content">
+                <div id="shares" class="tab-pane in active">
+                  <!-- Table for the shares bought-->
+                  <table class="table table-bordered table-striped table-hover">
+                    <thead>
+                      <tr class="warning">
+                        <th>Stock</th>
+                        <th>Shares Owned</th>
+                        <th class="hidden-480">Weighed-in </th>
+                        <th>Market Price</th>
+                        <th>Change(%)</th>
+                        <th>Options</th>
+                      </tr>
+                    </thead>
+                    <tbody></tbody>
+                    <tr>
+                      <td>Loren Ipsum</td>
+                      <td><span class="label label-light">50000</span></td>
+                      <td class="hidden-480">5.15</td>
+                      <td>9.65</td>
+                      <td><span class="badge badge-success">4.5</span></td>
+                      <td>
+                        <div class="visible-md visible-lg hidden-sm hidden-xs btn-group">
+                          <button data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Buy more" title="Buy more" class="btn btn-success btn-xs"><i class="icon-ok bigger-120"></i></button>
+                          <button data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Sell" title="Sell" class="btn btn-warning btn-xs"><i class="icon-trash bigger-120"></i></button>
+                          <button data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Info" title="Info" class="btn btn-info btn-xs"><i class="icon-info-sign bigger-120"></i></button>
+                        </div>
+                        <div class="visible-xs visible-sm hidden-md hidden-lg">
+                          <div class="inline position-relative">
+                            <button data-toggle="dropdown" class="btn btn-minier btn-primary dropdown-toggle"><i class="icon-cog icon-only bigger-120"></i></button>
+                            <ul class="dropdown-menu dropdown-only-icon dropdown-yellow pull-right dropdown-caret dropdown-close">
+                              <li><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Buy more" title="Buy more" href="#" class="tooltip-warning"><span class="green"><i class="icon-ok bigger-120"></i></span></a></li>
+                              <li><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Sell" title="Sell" href="#" class="tooltip-warning"><span class="red"><i class="icon-trash bigger-120"></i></span></a></li>
+                              <li><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Info" title="Info" href="#" class="tooltip-warning"><span class="blue"><i class="icon-info-sign bigger-120"></i></span></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Loren Ipsum</td>
+                      <td><span class="label label-light">50000</span></td>
+                      <td class="hidden-480">5.15</td>
+                      <td>9.65</td>
+                      <td><span class="badge badge-success">4.5</span></td>
+                      <td>
+                        <div class="visible-md visible-lg hidden-sm hidden-xs btn-group">
+                          <button data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Buy more" title="Buy more" class="btn btn-success btn-xs"><i class="icon-ok bigger-120"></i></button>
+                          <button data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Sell" title="Sell" class="btn btn-warning btn-xs"><i class="icon-trash bigger-120"></i></button>
+                          <button data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Info" title="Info" class="btn btn-info btn-xs"><i class="icon-info-sign bigger-120"></i></button>
+                        </div>
+                        <div class="visible-xs visible-sm hidden-md hidden-lg">
+                          <div class="inline position-relative">
+                            <button data-toggle="dropdown" class="btn btn-minier btn-primary dropdown-toggle"><i class="icon-cog icon-only bigger-120"></i></button>
+                            <ul class="dropdown-menu dropdown-only-icon dropdown-yellow pull-right dropdown-caret dropdown-close">
+                              <li><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Buy more" title="Buy more" href="#" class="tooltip-warning"><span class="green"><i class="icon-ok bigger-120"></i></span></a></li>
+                              <li><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Sell" title="Sell" href="#" class="tooltip-warning"><span class="red"><i class="icon-trash bigger-120"></i></span></a></li>
+                              <li><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Info" title="Info" href="#" class="tooltip-warning"><span class="blue"><i class="icon-info-sign bigger-120"></i></span></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Loren Ipsum</td>
+                      <td><span class="label label-light">50000</span></td>
+                      <td class="hidden-480">5.15</td>
+                      <td>9.65</td>
+                      <td><span class="badge badge-success">4.5</span></td>
+                      <td>
+                        <div class="visible-md visible-lg hidden-sm hidden-xs btn-group">
+                          <button data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Buy more" title="Buy more" class="btn btn-success btn-xs"><i class="icon-ok bigger-120"></i></button>
+                          <button data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Sell" title="Sell" class="btn btn-warning btn-xs"><i class="icon-trash bigger-120"></i></button>
+                          <button data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Info" title="Info" class="btn btn-info btn-xs"><i class="icon-info-sign bigger-120"></i></button>
+                        </div>
+                        <div class="visible-xs visible-sm hidden-md hidden-lg">
+                          <div class="inline position-relative">
+                            <button data-toggle="dropdown" class="btn btn-minier btn-primary dropdown-toggle"><i class="icon-cog icon-only bigger-120"></i></button>
+                            <ul class="dropdown-menu dropdown-only-icon dropdown-yellow pull-right dropdown-caret dropdown-close">
+                              <li><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Buy more" title="Buy more" href="#" class="tooltip-warning"><span class="green"><i class="icon-ok bigger-120"></i></span></a></li>
+                              <li><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Sell" title="Sell" href="#" class="tooltip-warning"><span class="red"><i class="icon-trash bigger-120"></i></span></a></li>
+                              <li><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Info" title="Info" href="#" class="tooltip-warning"><span class="blue"><i class="icon-info-sign bigger-120"></i></span></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Loren Ipsum</td>
+                      <td><span class="label label-light">50000</span></td>
+                      <td class="hidden-480">5.15</td>
+                      <td>9.65</td>
+                      <td><span class="badge badge-success">4.5</span></td>
+                      <td>
+                        <div class="visible-md visible-lg hidden-sm hidden-xs btn-group">
+                          <button data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Buy more" title="Buy more" class="btn btn-success btn-xs"><i class="icon-ok bigger-120"></i></button>
+                          <button data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Sell" title="Sell" class="btn btn-warning btn-xs"><i class="icon-trash bigger-120"></i></button>
+                          <button data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Info" title="Info" class="btn btn-info btn-xs"><i class="icon-info-sign bigger-120"></i></button>
+                        </div>
+                        <div class="visible-xs visible-sm hidden-md hidden-lg">
+                          <div class="inline position-relative">
+                            <button data-toggle="dropdown" class="btn btn-minier btn-primary dropdown-toggle"><i class="icon-cog icon-only bigger-120"></i></button>
+                            <ul class="dropdown-menu dropdown-only-icon dropdown-yellow pull-right dropdown-caret dropdown-close">
+                              <li><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Buy more" title="Buy more" href="#" class="tooltip-warning"><span class="green"><i class="icon-ok bigger-120"></i></span></a></li>
+                              <li><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Sell" title="Sell" href="#" class="tooltip-warning"><span class="red"><i class="icon-trash bigger-120"></i></span></a></li>
+                              <li><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Info" title="Info" href="#" class="tooltip-warning"><span class="blue"><i class="icon-info-sign bigger-120"></i></span></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Loren Ipsum</td>
+                      <td><span class="label label-light">50000</span></td>
+                      <td class="hidden-480">5.15</td>
+                      <td>9.65</td>
+                      <td><span class="badge badge-success">4.5</span></td>
+                      <td>
+                        <div class="visible-md visible-lg hidden-sm hidden-xs btn-group">
+                          <button data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Buy more" title="Buy more" class="btn btn-success btn-xs"><i class="icon-ok bigger-120"></i></button>
+                          <button data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Sell" title="Sell" class="btn btn-warning btn-xs"><i class="icon-trash bigger-120"></i></button>
+                          <button data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Info" title="Info" class="btn btn-info btn-xs"><i class="icon-info-sign bigger-120"></i></button>
+                        </div>
+                        <div class="visible-xs visible-sm hidden-md hidden-lg">
+                          <div class="inline position-relative">
+                            <button data-toggle="dropdown" class="btn btn-minier btn-primary dropdown-toggle"><i class="icon-cog icon-only bigger-120"></i></button>
+                            <ul class="dropdown-menu dropdown-only-icon dropdown-yellow pull-right dropdown-caret dropdown-close">
+                              <li><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Buy more" title="Buy more" href="#" class="tooltip-warning"><span class="green"><i class="icon-ok bigger-120"></i></span></a></li>
+                              <li><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Sell" title="Sell" href="#" class="tooltip-warning"><span class="red"><i class="icon-trash bigger-120"></i></span></a></li>
+                              <li><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-original-title="Info" title="Info" href="#" class="tooltip-warning"><span class="blue"><i class="icon-info-sign bigger-120"></i></span></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div id="bonds" class="tab-pane">
+                  <!--A jumbotron used when no data is available to display related to the user-->
+                  <div class="jumbotron">
+                    <h2>Buy Bonds</h2>
+                    <p class="grey">You dont have any bonds yet.</p>
+                    <p><a role="button" class="btn btn-warning btn-lg">Buy Bonds</a></p>
+                  </div>
+                </div>
+                <div id="loans" class="tab-pane">
+                  <div class="jumbotron">
+                    <h2>Get a loan</h2>
+                    <p class="grey">You haven't borrowed any money yet to happily invest.</p>
+                    <p><a role="button" class="btn btn-warning btn-lg">Get Loan</a></p>
+                  </div>
+                </div>
+                <div id="deposits" class="tab-pane">
+                  <div class="jumbotron">
+                    <h2>Fixed Deposits</h2>
+                    <p class="grey">You have no money saved up yet.</p>
+                    <p><a role="button" class="btn btn-warning btn-lg">Make Deposit</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hr hr32 hr-dotted vspace-20"></div>
+          </div>
+          <!--Contest Portfolio - User analytical data-->
+          <div role="user specific analytical data" class="col-sm-12">
+            <div id="activity-tabs" class="widget-box light-border">
+              <div class="widget-header widget-header-flat header-color-orange">
+                <h4 class="smaller"><i class="icon-info-sign bigger-120"></i>Contest Portfolio</h4>
+                <div class="widget-toolbar">
+                  <ul id="activty-tabs" class="nav nav-tabs tab-color-blue">
+                    <li class="active"><a data-toggle="tab" href="#recent-activities"><i class="icon-time"></i> Recent activities</a></li>
+                    <li><a data-toggle="tab" href="#holdings"><i class="icon-circle"></i> Holdings</a></li>
+                    <li><a data-toggle="tab" href="#performance"><i class="icon-eye-open"></i> Preformance</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="widget-body">
+                <div class="widget-main padding-10">
+                  <div class="tab-content no-padding">
+                    <div id="recent-activities" class="tab-pane active">
+                      <!--adding a scroll-bar to condense the data-->
+                      <div data-height="300" class="slim-scroll">
+                        <div id="recent-activities-feed" class="profile-feed">
+                          <!--The Recent activities listed here-->
+                          <div class="profile-activity clearfix padding-10">
+                            <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-money btn-success no-hover"></i><span class="label label-success pull-right">Settled</span>
+                              <p class="statement large">You <span class="label label-info">sold </span><strong class="label label-light bold">50000 </strong><span class="text-info"> Safaricom</span> shares for Ksh.<span class="text-info"> 1,568,000</span></p>
+                              <div class="time"><i class="icon-time bigger-32"></i> 2 days ago</div>
+                            </div>
+                          </div>
+                          <div class="profile-activity clearfix padding-10">
+                            <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-money btn-success no-hover"></i><span class="label label-success pull-right">Settled</span>
+                              <p class="statement large">You <span class="label label-info">sold </span><strong class="label label-light bold">50000 </strong><span class="text-info"> Safaricom</span> shares for Ksh.<span class="text-info"> 1,568,000</span></p>
+                              <div class="time"><i class="icon-time bigger-32"></i> 2 days ago</div>
+                            </div>
+                          </div>
+                          <div class="profile-activity clearfix padding-10">
+                            <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-money btn-success no-hover"></i><span class="label label-success pull-right">Settled</span>
+                              <p class="statement large">You <span class="label label-info">sold </span><strong class="label label-light bold">50000 </strong><span class="text-info"> Safaricom</span> shares for Ksh.<span class="text-info"> 1,568,000</span></p>
+                              <div class="time"><i class="icon-time bigger-32"></i> 2 days ago</div>
+                            </div>
+                          </div>
+                          <div class="profile-activity clearfix padding-10">
+                            <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-money btn-success no-hover"></i><span class="label label-success pull-right">Settled</span>
+                              <p class="statement large">You <span class="label label-info">sold </span><strong class="label label-light bold">50000 </strong><span class="text-info"> Safaricom</span> shares for Ksh.<span class="text-info"> 1,568,000</span></p>
+                              <div class="time"><i class="icon-time bigger-32"></i> 2 days ago</div>
+                            </div>
+                          </div>
+                          <div class="profile-activity clearfix padding-10">
+                            <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-money btn-success no-hover"></i><span class="label label-success pull-right">Settled</span>
+                              <p class="statement large">You <span class="label label-info">sold </span><strong class="label label-light bold">50000 </strong><span class="text-info"> Safaricom</span> shares for Ksh.<span class="text-info"> 1,568,000</span></p>
+                              <div class="time"><i class="icon-time bigger-32"></i> 2 days ago</div>
+                            </div>
+                          </div>
+                          <div class="profile-activity clearfix padding-10">
+                            <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-money btn-success no-hover"></i><span class="label label-success pull-right">Settled</span>
+                              <p class="statement large">You <span class="label label-info">sold </span><strong class="label label-light bold">50000 </strong><span class="text-info"> Safaricom</span> shares for Ksh.<span class="text-info"> 1,568,000</span></p>
+                              <div class="time"><i class="icon-time bigger-32"></i> 2 days ago</div>
+                            </div>
+                          </div>
+                          <div class="profile-activity clearfix padding-10">
+                            <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-money btn-success no-hover"></i><span class="label label-success pull-right">Settled</span>
+                              <p class="statement large">You <span class="label label-info">sold </span><strong class="label label-light bold">50000 </strong><span class="text-info"> Safaricom</span> shares for Ksh.<span class="text-info"> 1,568,000</span></p>
+                              <div class="time"><i class="icon-time bigger-32"></i> 2 days ago</div>
+                            </div>
+                          </div>
+                          <div class="profile-activity clearfix padding-10">
+                            <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-money btn-success no-hover"></i><span class="label label-success pull-right">Settled</span>
+                              <p class="statement large">You <span class="label label-info">sold </span><strong class="label label-light bold">50000 </strong><span class="text-info"> Safaricom</span> shares for Ksh.<span class="text-info"> 1,568,000</span></p>
+                              <div class="time"><i class="icon-time bigger-32"></i> 2 days ago</div>
+                            </div>
+                          </div>
+                          <div class="profile-activity clearfix padding-10">
+                            <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-money btn-success no-hover"></i><span class="label label-success pull-right">Settled</span>
+                              <p class="statement large">You <span class="label label-info">sold </span><strong class="label label-light bold">50000 </strong><span class="text-info"> Safaricom</span> shares for Ksh.<span class="text-info"> 1,568,000</span></p>
+                              <div class="time"><i class="icon-time bigger-32"></i> 2 days ago</div>
+                            </div>
+                          </div>
+                          <div class="profile-activity clearfix padding-10">
+                            <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-money btn-success no-hover"></i><span class="label label-success pull-right">Settled</span>
+                              <p class="statement large">You <span class="label label-info">sold </span><strong class="label label-light bold">50000 </strong><span class="text-info"> Safaricom</span> shares for Ksh.<span class="text-info"> 1,568,000</span></p>
+                              <div class="time"><i class="icon-time bigger-32"></i> 2 days ago</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="holdings" class="tab-pane">Holdings chart</div>
+                    <div id="performance" class="tab-pane">Portfolio chart</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hr hr32 hr-dotted vspace-20"></div>
+            <div class="row">
+              <!--Comments-->
+              <div role="conversations" class="col-xs-12">
+                <div id="transparent" class="widget-box light-border">
+                  <div class="widget-header header-color-orange widget-header-flat">
+                    <h4 class="smaller"><i class="icon-comments"></i>Conversation</h4>
+                  </div>
+                  <div class="widget-body">
+                    <div class="widget-main no-padding">
+                      <div data-height="300" class="slim-scroll">
+                        <div class="dialogs">
+                          <!--The comments-->
+                          <div class="itemdiv dialogdiv">
+                            <div class="user"><img alt="image" src="/assets/avatars/avatar1.png"/></div>
+                            <div class="body">
+                              <div class="time"><i class="icon-time"></i><span class="grey"> 12 mins ago</span></div>
+                              <div class="name"><a>Jhene Knights</a></div>
+                              <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis.</div>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-minier btn-info">Like</button>
+                                <button type="button" class="btn-btn-minier btn-success">Reply</button>
+                              </div>
+                              <!--
+                              div.tools
+                              a.btn.btn-minier.btn-info(data-rel="tooltip", title, data-original-title="Reply")
+                               i.icon-only.icon-share-alt
+                              -->
+                            </div>
+                          </div>
+                          <div class="itemdiv dialogdiv">
+                            <div class="user"><img alt="image" src="/assets/avatars/avatar1.png"/></div>
+                            <div class="body">
+                              <div class="time"><i class="icon-time"></i><span class="grey"> 12 mins ago</span></div>
+                              <div class="name"><a>Jhene Knights</a></div>
+                              <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis.</div>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-minier btn-info">Like</button>
+                                <button type="button" class="btn-btn-minier btn-success">Reply</button>
+                              </div>
+                              <!--
+                              div.tools
+                              a.btn.btn-minier.btn-info(data-rel="tooltip", title, data-original-title="Reply")
+                               i.icon-only.icon-share-alt
+                              -->
+                            </div>
+                          </div>
+                          <div class="itemdiv dialogdiv">
+                            <div class="user"><img alt="image" src="/assets/avatars/avatar1.png"/></div>
+                            <div class="body">
+                              <div class="time"><i class="icon-time"></i><span class="grey"> 12 mins ago</span></div>
+                              <div class="name"><a>Jhene Knights</a></div>
+                              <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis.</div>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-minier btn-info">Like</button>
+                                <button type="button" class="btn-btn-minier btn-success">Reply</button>
+                              </div>
+                              <!--
+                              div.tools
+                              a.btn.btn-minier.btn-info(data-rel="tooltip", title, data-original-title="Reply")
+                               i.icon-only.icon-share-alt
+                              -->
+                            </div>
+                          </div>
+                          <div class="itemdiv dialogdiv">
+                            <div class="user"><img alt="image" src="/assets/avatars/avatar1.png"/></div>
+                            <div class="body">
+                              <div class="time"><i class="icon-time"></i><span class="grey"> 12 mins ago</span></div>
+                              <div class="name"><a>Jhene Knights</a></div>
+                              <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis.</div>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-minier btn-info">Like</button>
+                                <button type="button" class="btn-btn-minier btn-success">Reply</button>
+                              </div>
+                              <!--
+                              div.tools
+                              a.btn.btn-minier.btn-info(data-rel="tooltip", title, data-original-title="Reply")
+                               i.icon-only.icon-share-alt
+                              -->
+                            </div>
+                          </div>
+                          <div class="itemdiv dialogdiv">
+                            <div class="user"><img alt="image" src="/assets/avatars/avatar1.png"/></div>
+                            <div class="body">
+                              <div class="time"><i class="icon-time"></i><span class="grey"> 12 mins ago</span></div>
+                              <div class="name"><a>Jhene Knights</a></div>
+                              <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis.</div>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-minier btn-info">Like</button>
+                                <button type="button" class="btn-btn-minier btn-success">Reply</button>
+                              </div>
+                              <!--
+                              div.tools
+                              a.btn.btn-minier.btn-info(data-rel="tooltip", title, data-original-title="Reply")
+                               i.icon-only.icon-share-alt
+                              -->
+                            </div>
+                          </div>
+                          <div class="itemdiv dialogdiv">
+                            <div class="user"><img alt="image" src="/assets/avatars/avatar1.png"/></div>
+                            <div class="body">
+                              <div class="time"><i class="icon-time"></i><span class="grey"> 12 mins ago</span></div>
+                              <div class="name"><a>Jhene Knights</a></div>
+                              <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis.</div>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-minier btn-info">Like</button>
+                                <button type="button" class="btn-btn-minier btn-success">Reply</button>
+                              </div>
+                              <!--
+                              div.tools
+                              a.btn.btn-minier.btn-info(data-rel="tooltip", title, data-original-title="Reply")
+                               i.icon-only.icon-share-alt
+                              -->
+                            </div>
+                          </div>
+                          <div class="itemdiv dialogdiv">
+                            <div class="user"><img alt="image" src="/assets/avatars/avatar1.png"/></div>
+                            <div class="body">
+                              <div class="time"><i class="icon-time"></i><span class="grey"> 12 mins ago</span></div>
+                              <div class="name"><a>Jhene Knights</a></div>
+                              <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis.</div>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-minier btn-info">Like</button>
+                                <button type="button" class="btn-btn-minier btn-success">Reply</button>
+                              </div>
+                              <!--
+                              div.tools
+                              a.btn.btn-minier.btn-info(data-rel="tooltip", title, data-original-title="Reply")
+                               i.icon-only.icon-share-alt
+                              -->
+                            </div>
+                          </div>
+                          <div class="itemdiv dialogdiv">
+                            <div class="user"><img alt="image" src="/assets/avatars/avatar1.png"/></div>
+                            <div class="body">
+                              <div class="time"><i class="icon-time"></i><span class="grey"> 12 mins ago</span></div>
+                              <div class="name"><a>Jhene Knights</a></div>
+                              <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis.</div>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-minier btn-info">Like</button>
+                                <button type="button" class="btn-btn-minier btn-success">Reply</button>
+                              </div>
+                              <!--
+                              div.tools
+                              a.btn.btn-minier.btn-info(data-rel="tooltip", title, data-original-title="Reply")
+                               i.icon-only.icon-share-alt
+                              -->
+                            </div>
+                          </div>
+                          <div class="itemdiv dialogdiv">
+                            <div class="user"><img alt="image" src="/assets/avatars/avatar1.png"/></div>
+                            <div class="body">
+                              <div class="time"><i class="icon-time"></i><span class="grey"> 12 mins ago</span></div>
+                              <div class="name"><a>Jhene Knights</a></div>
+                              <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis.</div>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-minier btn-info">Like</button>
+                                <button type="button" class="btn-btn-minier btn-success">Reply</button>
+                              </div>
+                              <!--
+                              div.tools
+                              a.btn.btn-minier.btn-info(data-rel="tooltip", title, data-original-title="Reply")
+                               i.icon-only.icon-share-alt
+                              -->
+                            </div>
+                          </div>
+                          <div class="itemdiv dialogdiv">
+                            <div class="user"><img alt="image" src="/assets/avatars/avatar1.png"/></div>
+                            <div class="body">
+                              <div class="time"><i class="icon-time"></i><span class="grey"> 12 mins ago</span></div>
+                              <div class="name"><a>Jhene Knights</a></div>
+                              <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis.</div>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-minier btn-info">Like</button>
+                                <button type="button" class="btn-btn-minier btn-success">Reply</button>
+                              </div>
+                              <!--
+                              div.tools
+                              a.btn.btn-minier.btn-info(data-rel="tooltip", title, data-original-title="Reply")
+                               i.icon-only.icon-share-alt
+                              -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--The user can add a comment-->
+                      <form class="no-padding">
+                        <div class="form-actions">
+                          <div class="input-group">
+                            <input placeholder="Type in your two cents here" type="text" name="message" class="form-control"/><span class="input-group-btn">
+                              <button type="button" class="btn btn-sm btn-info no-radius"><i class="icon-share-alt"></i>Comment</button></span>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Stock updates ticker-->
+      <div class="col-sm-3 hidden-xs">
+        <div id="transparent" class="widget-box light-border">
+          <div class="widget-header header-color-orange widget-header-flat">
+            <h4 class="smaller"><i class="icon-time"></i>NSE Updates</h4>
+          </div>
+          <div class="widget-body">
+            <div class="widget-main padding-4">
+              <div data-height="300" class="slim-scroll">
+                <div id="nse-stocks-feeds" class="profile-feed">
+                  <!-- The updates populated here-->
+                  <div class="profile-activity clearfix">
+                    <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-arrow-down btn-danger no-hover"></i><a class="user grey">The Company</a><span class="label label-danger arrowed pull-right margin-10">1.5</span>
+                      <div class="time"><i class="icon-time bigger-32"></i> 16 min ago</div>
+                    </div>
+                  </div>
+                  <div class="profile-activity clearfix">
+                    <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-arrow-down btn-danger no-hover"></i><a class="user grey">The Company</a><span class="label label-danger arrowed pull-right margin-10">2.5</span>
+                      <div class="time"><i class="icon-time bigger-32"></i> 16 min ago</div>
+                    </div>
+                  </div>
+                  <div class="profile-activity clearfix">
+                    <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-arrow-down btn-danger no-hover"></i><a class="user grey">The Company</a><span class="label label-danger arrowed pull-right margin-10">3.5</span>
+                      <div class="time"><i class="icon-time bigger-32"></i> 16 min ago</div>
+                    </div>
+                  </div>
+                  <div class="profile-activity clearfix">
+                    <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-arrow-down btn-danger no-hover"></i><a class="user grey">The Company</a><span class="label label-danger arrowed pull-right margin-10">4.5</span>
+                      <div class="time"><i class="icon-time bigger-32"></i> 16 min ago</div>
+                    </div>
+                  </div>
+                  <div class="profile-activity clearfix">
+                    <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-arrow-down btn-danger no-hover"></i><a class="user grey">The Company</a><span class="label label-danger arrowed pull-right margin-10">5.5</span>
+                      <div class="time"><i class="icon-time bigger-32"></i> 16 min ago</div>
+                    </div>
+                  </div>
+                  <div class="profile-activity clearfix">
+                    <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-arrow-down btn-danger no-hover"></i><a class="user grey">The Company</a><span class="label label-danger arrowed pull-right margin-10">6.5</span>
+                      <div class="time"><i class="icon-time bigger-32"></i> 16 min ago</div>
+                    </div>
+                  </div>
+                  <div class="profile-activity clearfix">
+                    <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-arrow-down btn-danger no-hover"></i><a class="user grey">The Company</a><span class="label label-danger arrowed pull-right margin-10">7.5</span>
+                      <div class="time"><i class="icon-time bigger-32"></i> 16 min ago</div>
+                    </div>
+                  </div>
+                  <div class="profile-activity clearfix">
+                    <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-arrow-down btn-danger no-hover"></i><a class="user grey">The Company</a><span class="label label-danger arrowed pull-right margin-10">8.5</span>
+                      <div class="time"><i class="icon-time bigger-32"></i> 16 min ago</div>
+                    </div>
+                  </div>
+                  <div class="profile-activity clearfix">
+                    <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-arrow-down btn-danger no-hover"></i><a class="user grey">The Company</a><span class="label label-danger arrowed pull-right margin-10">9.5</span>
+                      <div class="time"><i class="icon-time bigger-32"></i> 16 min ago</div>
+                    </div>
+                  </div>
+                  <div class="profile-activity clearfix">
+                    <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-arrow-down btn-danger no-hover"></i><a class="user grey">The Company</a><span class="label label-danger arrowed pull-right margin-10">10.5</span>
+                      <div class="time"><i class="icon-time bigger-32"></i> 16 min ago</div>
+                    </div>
+                  </div>
+                  <div class="profile-activity clearfix">
+                    <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-arrow-down btn-danger no-hover"></i><a class="user grey">The Company</a><span class="label label-danger arrowed pull-right margin-10">11.5</span>
+                      <div class="time"><i class="icon-time bigger-32"></i> 16 min ago</div>
+                    </div>
+                  </div>
+                  <div class="profile-activity clearfix">
+                    <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-arrow-down btn-danger no-hover"></i><a class="user grey">The Company</a><span class="label label-danger arrowed pull-right margin-10">12.5</span>
+                      <div class="time"><i class="icon-time bigger-32"></i> 16 min ago</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hr hr20 hr-dotted"></div>
+        <!--Headlines will fall here-->
+        <div id="transparent" class="widget-box light-border">
+          <div class="widget-header header-color-orange widget-header-flat">
+            <h4 class="smaller"><i class="icon-comments"></i>Headlines</h4>
+          </div>
+          <div class="widget-body">
+            <div class="widget-main padding-4">
+              <div data-height="400" class="slim-scroll">
+                <div class="dialogs">
+                  <div class="profile-activity clearfix">
+                    <div style="padding-right: 0.45em"><a target="_blank" href="http://app.prittynote.com" class="user grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                      <div class="time"><i class="icon-time bigger-32"> an hour ago</i></div>
+                    </div>
+                  </div>
+                  <div class="profile-activity clearfix">
+                    <div style="padding-right: 0.45em"><a target="_blank" href="http://app.prittynote.com" class="user grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                      <div class="time"><i class="icon-time bigger-32"> an hour ago</i></div>
+                    </div>
+                  </div>
+                  <div class="profile-activity clearfix">
+                    <div style="padding-right: 0.45em"><a target="_blank" href="http://app.prittynote.com" class="user grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                      <div class="time"><i class="icon-time bigger-32"> an hour ago</i></div>
+                    </div>
+                  </div>
+                  <div class="profile-activity clearfix">
+                    <div style="padding-right: 0.45em"><a target="_blank" href="http://app.prittynote.com" class="user grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                      <div class="time"><i class="icon-time bigger-32"> an hour ago</i></div>
+                    </div>
+                  </div>
+                  <div class="profile-activity clearfix">
+                    <div style="padding-right: 0.45em"><a target="_blank" href="http://app.prittynote.com" class="user grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                      <div class="time"><i class="icon-time bigger-32"> an hour ago</i></div>
+                    </div>
+                  </div>
+                  <div class="profile-activity clearfix">
+                    <div style="padding-right: 0.45em"><a target="_blank" href="http://app.prittynote.com" class="user grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                      <div class="time"><i class="icon-time bigger-32"> an hour ago</i></div>
+                    </div>
+                  </div>
+                  <div class="profile-activity clearfix">
+                    <div style="padding-right: 0.45em"><a target="_blank" href="http://app.prittynote.com" class="user grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                      <div class="time"><i class="icon-time bigger-32"> an hour ago</i></div>
+                    </div>
+                  </div>
+                  <div class="profile-activity clearfix">
+                    <div style="padding-right: 0.45em"><a target="_blank" href="http://app.prittynote.com" class="user grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                      <div class="time"><i class="icon-time bigger-32"> an hour ago</i></div>
+                    </div>
+                  </div>
+                  <div class="profile-activity clearfix">
+                    <div style="padding-right: 0.45em"><a target="_blank" href="http://app.prittynote.com" class="user grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                      <div class="time"><i class="icon-time bigger-32"> an hour ago</i></div>
+                    </div>
+                  </div>
+                  <div class="profile-activity clearfix">
+                    <div style="padding-right: 0.45em"><a target="_blank" href="http://app.prittynote.com" class="user grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                      <div class="time"><i class="icon-time bigger-32"> an hour ago</i></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

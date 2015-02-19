@@ -1,0 +1,179 @@
+//Content in the middle of the app
+div.main-content
+
+	//The page header
+	div.breadcrumbs#breadcrumbs.breadcrumbs-fixed
+		ul.breadcrumb
+			li
+				i.icon-home.home-icon
+				a(href="") Home
+			li.active Nairobi Securities Exchange
+
+	div.page-content
+		div.vspace-20.hidden-xs.hidden-sm
+		div.page-header
+			h1.orange Stock Market
+				small: i.icon-double-angle-right
+					|  Overview & Stats
+
+		//Dashboard content falls here
+		div.row
+			div.col-sm-9
+				div.row
+					div.col-sm-12
+						//Into two tabs -  orders and the shares
+						div.tabbable.tabs
+							ul.nav.nav-tabs.tab-color-blue.padding-10.background-blue.orange
+								li.active
+									a(data-toggle="tab", href="#the-market")
+										i.icon-bookmark.orange.bigger-120.blue
+										|  The Stock Market
+								li
+									a(data-toggle="tab", href="#myorders")
+										i.icon-user.orange.bigger-120
+										|  My Orders
+
+							//The Tabs content
+							div.tab-content
+								div.tab-pane.in.active#the-market
+									div#stock-market-list.panel-group.accordion-style1
+									- var categories = ["Agricultural", "Automobiles", "Banking", "Commercial and Services", "Construction & Allied", "Energy & Petroleum", "Growth & Enterprice Market", "Insurance", "Investment", "Manufacturing & Allied", "Telecommunucation & Technology"]
+									- for(a=0;a<categories.length; a++) {
+									div.panel.panel-warning
+										div.panel-heading
+											//a.href="#shares-*"
+											a(href="#{'#shares-'+a}", data-parent="#stock-market-list", data-toggle="collapse").accordion-toggle.collapsed.orange
+												i.icon-plus(data-icon-hide="icon-minus", data-icon-show="icon-plus")
+												|  #{categories[a]}
+										div.panel-collapse.collapse(id="#{'shares-'+a}")
+											//- (div.panel-body) use this instead if the content is not a table
+											// Table for the related shares market category
+											table.table.table-bordered.table-striped.table-hover
+												thead: tr.success
+													th Company
+													th Price
+													th.hidden-480 Previous Price
+													th.hidden-480 Turnover
+													th Change(%)
+													th Options
+
+												tbody
+												- for(x=1;x<6;x++) {
+													tr
+														td Loren Ipsum
+														td 4.23
+														td.hidden-480 5.15
+														td.hidden-480 #{962675*x}
+														td: span.badge.badge-success 4.5
+														td
+															//- For medium to large screens
+															div.visible-md.visible-lg.hidden-sm.hidden-xs.btn-group
+																button.btn.btn-success.btn-xs: i.icon-check.bigger-120
+																button.btn.btn-warning.btn-xs: i.icon-exchange.bigger-120
+																button.btn.btn-info.btn-xs: i.icon-info-sign.bigger-120
+
+															//- For smaller screens: Mobile
+															div.visible-xs.visible-sm.hidden-md.hidden-lg
+																div.inline.position-relative
+																	button.btn.btn-minier.btn-primary.dropdown-toggle(data-toggle="dropdown")
+																		i.icon-cog.icon-only.bigger-120
+																	ul.dropdown-menu.dropdown-only-icon.dropdown-yellow.pull-right.dropdown-caret.dropdown-close
+																		li: a.tooltip-info(data-rel="tooltip", data-original-title="Buy more", title="Buy more", href="#")
+																			span.green: i.icon-check.bigger-120
+																		li: a.tooltip-info(data-rel="tooltip", data-original-title="Sell", title="Sell", href="#")
+																			span.red: i.icon-exchange.bigger-120
+																		li: a.tooltip-info(data-rel="tooltip", data-original-title="Info", title="Info", href="#")
+																			span.blue: i.icon-info-sign.bigger-120
+												- }
+									- }
+
+								div.tab-pane#myorders
+									div.widget-box.transparent
+										div.widget-header.widget-header-flat.padding-4
+											h3.lighter.orange
+												i.icon-list-alt
+												|  Your Orders
+											div.widget-toolbar
+												a(data-action="collapse"): i.icon-chevron-up
+										div.widget-body.no-padding
+											div.table-responsive
+												table.table.table-bordered.table-striped.table-hover
+													thead: tr.warning
+														th Date
+														th Stock
+														th Instruction
+														th Shares
+														th Price
+														th Total Cost
+														th Settled
+
+													tbody
+													- for(x=1;x<8;x++) {
+														tr
+															td.momenttime
+															td Company Name
+															td: span.badge.badge-info Buy
+															td: span.label.label-default #{316*x}
+															td Ksh #{1.5*x}
+															td Ksh #{316*1.2*x}
+															td: span.badge.badge-success Settled
+													- }
+						
+						//Open the 1st panel after page load
+						script(type="text/javascript")
+							$(window).load(function() { $('div.panel.panel-warning div.panel-heading a')[0].click() });
+
+						// For time example
+						script(type='text/javascript')
+							| var time = moment().add('days', 1).format('ddd D, MMM YYYY')
+							| $('.momenttime').html(time);
+
+			//a little spacing
+			div.space-10
+
+			//Possible for the ads
+			div.col-sm-3
+				div.row
+					div.col-xs-12
+						div.widget-box#transparent.light-border
+					div.widget-header.header-color-orange.widget-header-flat
+						h4.smaller
+							i.icon-time
+							| NSE Updates
+					div.widget-body
+						div.widget-main.padding-4
+							div.slim-scroll(data-height="300")
+								div.profile-feed#nse-stocks-feeds
+
+									// The updates populated here
+									- for(x=0;x<12;x++) {
+									div.profile-activity.clearfix
+										div(style="padding-right: 0.45em")
+											i.pull-left.thumbicon.icon-arrow-down.btn-danger.no-hover
+											a.user.grey The Company
+											span.label.label-danger.arrowed.pull-right.margin-10 #{x+3/2}
+											div.time
+												i.icon-time.bigger-32
+												|  16 min ago
+
+									- }
+				div.hr.hr20.hr-dotted
+
+				//Headlines will fall here
+				div.widget-box#transparent.light-border
+					div.widget-header.header-color-orange.widget-header-flat
+						h4.smaller
+							i.icon-comments
+							| Headlines
+					div.widget-body
+						div.widget-main.padding-4
+							div.slim-scroll(data-height="400")
+								div.dialogs
+									- for(x=0;x<10;x++) {
+									div.profile-activity.clearfix
+										div(style="padding-right: 0.45em")
+											a.user.grey(target="_blank", href="http://app.prittynote.com") Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+											div.time
+												i.icon-time.bigger-32
+													|  an hour ago
+									- }

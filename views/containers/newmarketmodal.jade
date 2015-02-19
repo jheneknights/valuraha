@@ -1,0 +1,138 @@
+//required script
+script(src='/assets/js/fuelux/fuelux.wizard.min.js')
+
+.widget-box.transparent#wizard-box
+	.widget-header
+		h4.lighter.orange New Shares Widget
+	.widget-body
+		.widget-main
+			div.step-container.wizard-header(data-target="#modal-step-contents")
+				ul.wizard-steps
+					li.active(data-target="#step-1-choosing")
+						span.step 1
+						span.title Select Shares
+
+					li(data-target="#step-2-ordering")
+						span.step 2
+						span.title Place Order
+
+					li(data-target="#step-3-confirm")
+						span.step 3
+						span.title Confirm Transaction
+
+			hr.hr20
+			//The Steps to be followed
+			div.step-content.position-relative#modal-step-contents
+
+				//The choise content
+				.step-pane.active#step-1-choosing
+					div.row
+						div.col-xs-12
+							//The 3 contents
+							div.row
+								//Select Company list
+								div.col-xs-12.col-sm-5
+									.widget-box.transparent.border
+										.widget-header.widget-header-flat
+											h5.bigger.lighter.orange Select Company
+											.widget-toolbar#search-company
+												a(href="#"): i.icon-list.grey
+												a(href="#"): i.icon-search.grey
+										.widget-body
+											div.widget-main.padding-4
+												div.slim-scroll(data-height="250")
+													// The updates populated here
+													- for(x=0;x<32;x++) {
+													div.profile-activity.clearfix
+														div(style="padding-right: 0.45em")
+															//- i.pull-left.thumbicon.icon-arrow-down.btn-danger.no-hover
+															span.label.label-danger.pull-right.margin-10 
+																i.icon-arrow-down  #{x+3/2}
+															a.user.orange SFRM
+															h4.grey.no-padding Safaricom
+															//- div.time
+															//- 	i.icon-tag.bigger-32
+															//- 	|  Safaricom
+													- }
+
+								//Company Details populated here
+								div.col-xs-12.col-sm-7.border-left.hidden-xs
+									div.row
+										div.col-xs-12.col-sm-4
+											span.profile-pic
+												img.img-responsive(src="/assets/avatars/profile-pic.jpg")
+											.space.space-10
+											.label.label-lg.label-success.block Safaricom
+										div.col-xs-12.col-sm-8
+											.widget-box.transparent
+												.widget-header.widget-header-flat.widget-header-small
+													h4.bigger.lighter.orange
+														i.icon-check.bigger-72
+														| A little about the company
+												.widget-body
+													.widget-main.bigger
+														p My job is mostly lorem ipsuming and dolor sit ameting as long as consectetur adipiscing elit.
+														p Sometimes quisque commodo massa gets in the way and sed ipsum porttitor facilisisp The best thing about my job is that vestibulum id ligula porta felis euismod and nullam quis risus eget urna mollis ornare.
+														p Thanks for visiting my profile.
+
+				//The confirmation participants
+				.step-pane#step-2-ordering
+					.space.space-15
+					form.form-horizontal#validate-form(method="post", novalidate)
+						// first password input
+						.form-group
+							label.control-label.col-xs-12.col-sm-3.no-padding-right(for="no-of-shares") 
+								| No. of shares
+							div.col-xs-12.col-sm-7
+								.clearfix
+									input#no-of-shares.form-control(type="number", name="no-of-shares")
+							div.space.space-15
+
+						// repeat password
+						fieldset(disabled="disabled")
+							.form-group
+								label.control-label.col-xs-12.col-sm-3.no-padding-right(for="disabledOrder")
+									strong Type of order
+								div.col-xs-12.col-sm-7
+									.clearfix
+										select#disabledOrder.form-control(name="disabledOrder")
+											option disabledOrder
+								div.space.space-15
+
+						.form-group
+							label.control-label.col-xs-12.col-sm-3.no-padding-right(for="reason") 
+								strong Reason:
+							div.col-xs-12.col-sm-7
+								.clearfix
+									textarea#reason.form-control(rows="3", name="reason")
+							div.space.space-15
+
+				//Use JUMBOTRON to be more specific about this
+				.step-pane#step-3-confirm
+					div.jumbotron.smaller
+						h2 The hard part is over.
+						p 
+							| Please click the 
+							span.label.label-success.label-lg confirm  
+							|  button to finish up.
+						p
+							| If not! You can always go back by pressing the 
+							span.label.label-lg prev  
+							|  button.
+						p Thank you.
+
+			hr.hr20
+			//The Steps options
+			.row-fluid.wizard-actions
+				button.btn.btn-sm.btn-prev
+					i.icon-arrow-left
+					|  Prev
+				button.btn.btn-sm.btn-success.btn-next(data-last="Confirm ")
+					i.icon-arrow-right
+					|  Next
+				button.btn.btn-sm.btn-danger.pull-left(data-dismiss="modal")
+					i.icon-remove
+					|  Cancel
+				button.btn.btn-sm.btn-warning.pull-left(data-role="show contest")
+					i.icon-trophy
+					| Big League Contest

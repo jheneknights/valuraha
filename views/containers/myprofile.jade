@@ -1,0 +1,109 @@
+//Content in the middle of the app
+div.main-content
+
+	//The page header
+	div.breadcrumbs#breadcrumbs.breadcrumbs-fixed
+		ul.breadcrumb
+			li
+				i.icon-home.home-icon
+				a(href="") Home
+			li.active Profile
+
+	div.page-content
+		div.vspace-20.hidden-xs.hidden-sm
+		div.page-header
+			h1.orange My Profile
+				small: i.icon-double-angle-right
+					|  Info
+
+		//- All relevant content starts here (for user)
+		div.row
+			//Main Dashboard stuff
+			div.col-sm-9
+
+				div.row
+					div.col-sm-12
+						div.tabbable.tabs.left
+							ul.nav.nav-tabs.tab-color-blue.padding-10.background-blue#myTabs
+								li.active: a(data-toggle="tab", href="#profile-info") 
+									i.red.icon-asterisk.bigger-75
+									|  My Info
+								li: a(data-toggle="tab", href="#profile-activity") 
+									i.green.icon-circle.bigger-75 
+									|  Recent Activities
+								li: a(data-toggle="tab", href="#profile-settings")
+									i.blue.icon-money.bigger-75
+									|  Settings
+
+							div.tab-content
+								//The users info synopsis falls here
+								div#profile-info.tab-pane.in.active
+									div.row
+										div.col-xs-12
+											// Profile page centralised
+											div.col-xs-4(role="profile pic")
+												span.profile-picture
+													img.editable.img-responsive#avatar(src="/assets/avatars/profile-pic.jpg")
+													div.space.space-10
+
+											div.col-xs-6
+												h4.orange Jhene Knights
+												div.profile-info-row
+													div.profile-info-name Username
+													div.profile-info-value: span jheneknights
+												div.profile-info-row
+													div.profile-info-name Email Address
+													div.profile-info-value eugenemutai@gmail.com
+												div.hr.hr-dotted
+
+								//Added his recent stocks activities
+								div#profile-activity.tab-pane
+
+									//adding a scroll-bar to condense the data
+									div.slim-scroll(data-height="300")
+										div.profile-feed#recent-activities-feed
+
+											//The Recent activities listed here
+											- for(x=0;x<10;x++) {
+											div.profile-activity.clearfix.padding-10
+												div(style="padding-right: 0.45em")
+													i.pull-left.thumbicon.icon-money.btn-success.no-hover
+													span.label.label-success.pull-right Settled
+													p.statement.large
+														| You 
+														span.label.label-info sold 
+														strong.label.label-light.bold 50000 
+														span.text-info  Safaricom
+														|  shares for Ksh.
+														span.text-info  1,568,000
+													
+													div.time
+														i.icon-time.bigger-32
+														|  2 days ago
+											- }
+
+								//Settings - for now edit their password
+								div#profile-settings.tab-pane
+									.space.space-15
+									form.form-horizontal#validate-form(method="post", novalidate)
+										// first password input
+										.form-group
+											label.control-label.col-xs-12.col-sm-3.no-padding-right(for="password") 
+												strong password
+											div.col-xs-8.col-sm-9
+												.clearfix
+													input#password.form-control(type="password", name="password")
+											div.space.space-15
+
+										// repeat password
+										.form-group
+											label.control-label.col-xs-12.col-sm-3.no-padding-right(for="passwordtwo")
+												strong repeat password
+											div.col-xs-8.col-sm-9
+												.clearfix
+													input#passwordtwo.form-control(type="password", name="passwordtwo")
+											div.space.space-15
+
+										.form-group
+											.col-sm-offset-3.col-sm-9
+												button.btn.btn-lg.btn-warning.hspace-15(type="submit") Reset Password

@@ -1,0 +1,23 @@
+{
+    "name": "application-name",
+    "version": "0.0.1",
+    "private": true,
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "dependencies": {
+        "express": "3.4.1",
+        "jade": "*"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node app.js"
+    },
+    "author": {
+        "name": "Jhene Knights",
+        "email": "eugenemutai@gmail.com"
+    },
+    "homepage": "",
+    "license": "BSD-2-Clause"
+}

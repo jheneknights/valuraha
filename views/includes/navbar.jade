@@ -1,0 +1,57 @@
+// The navigation bar
+nav.navbar.navbar-default.navbar-fixed-top#navbar
+	div.navbar-container
+
+		// Brand and toggle get grouped for better mobile display
+		div.navbar-header.pull-left
+			//- button.navbar-toggle(type="button", data-toggle="collapse", data-target="#role-navigation")
+			//- 	span.sr-only Toggle navigation
+			//- 	span.icon-bar.red
+			//- 	span.icon-bar.green
+			//- 	span.icon-bar.orange
+			//- 	span.icon-bar.blue
+			a.navbar-brand(href="#").text-warning
+				i.icon-compass
+				|  VALURAHA
+
+		// the navigation menu listing
+		//- div.collapse.navbar-collapse#role-navigation.dropdown-lighter
+		div.navbar-header.pull-right(role="navigation")
+			ul.nav.ace-nav
+				li.grey
+					a.tooltip-warning(href="/page/home", data-rel="tooltip", data-toggle="tooltip", data-trigger="hover", data-placement="bottom", data-original-title="Dashboard", title="Dashboard")
+						i.bigger-150.icon-dashboard
+						//- |  Dashboard
+				li.grey
+					a.tooltip-warning(href="/page/trading", data-rel="tooltip", data-toggle="tooltip", data-trigger="hover", data-placement="bottom", data-original-title="Your Portfolio", title="Your Portfolio")
+						i.bigger-150.icon-dollar 
+						//- |  Portfolio
+				li.grey
+					a.tooltip-warning(href="/page/market", data-rel="tooltip", data-toggle="tooltip", data-trigger="hover", data-placement="bottom", data-original-title="The Market", title="The Market")
+						i.bigger-150.icon-trophy
+						//- |  The Market
+				li.grey
+					a.tooltip-warning(href="/page/leagues", data-rel="tooltip", data-toggle="tooltip", data-trigger="hover", data-placement="bottom", data-original-title="Leagues", title="Leagues")
+						i.bigger-150.icon-flag
+						//- |  Leagues
+
+				//- div.navbar-header(role="navigation")
+				//- ul.nav.navbar-nav.ace-nav.pull-right#user-menu
+				li.dark-opaque
+					a(href="", data-toggle="dropdown").dropdown-toggle
+						img.nav-user-photo(src="/assets/avatars/avatar2.png", alt="Eugene Mutai")
+						span.user-info
+							small Hey, 
+							| Eugene
+						i.icon-caret-down
+
+					ul.user-menu.pull-right.dropdown-menu.dropdown-yellow.dropdown-caret.dropdown-close
+						li: a(href=""): i.icon-user
+								|  Profile
+						//- li: a(href=""): i.icon-cog
+								|  Settings
+						li.divider
+						li: a(href=""): i.icon-off
+								|  Log Out
+
+								

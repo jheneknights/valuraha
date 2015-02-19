@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Valuraha - UX/UI</title>
+    <!-- Site Necessities-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta http-equiv="cleartype" content="on">
+    <!-- Favicons-->
+    <link rel="shortcut icon" type="image/png" href="">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+    <!-- fonts-->
+    <link rel="stylesheet" href="/assets/css/ace-fonts.css">
+    <!-- ace styles-->
+    <link rel="stylesheet" href="/assets/css/ace.min.css">
+    <link rel="stylesheet" href="/assets/css/ace-skins.min.css">
+    <!--if IE 7
+    link(rel="stylesheet", href="/assets/css/font-awesome-ie7.min.css)
+    
+    -->
+    <!-- page specific plugin styles-->
+    <link rel="stylesheet" href="/assets/css/jquery.gritter.css">
+    <!-- ace settings handler-->
+    <script src="/assets/js/ace-extra.min.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries-->
+    <!--if lte IE
+    script(src="/assets/js/html5shiv.js")
+    script(src="/assets/js/respond.min.js")
+    
+    -->
+    <!-- basic scripts-->
+    <!--if !IE-->
+    <script type="text/javascript" src="/assets/js/jquery-2.0.3.min.js"></script>
+    <!--if IE
+    script(type='text/javascript', src='/assets/js/jquery-1.10.2.min.js')
+    
+    -->
+    <script type="text/javascript">
+      if ("ontouchend" in document) $.getScript('/assets/js/jquery.mobile.custom.min.js');
+      
+    </script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/typeahead-bs2.min.js"></script>
+    <!-- ace scripts-->
+    <script src="/assets/js/ace-elements.min.js"></script>
+    <script src="/assets/js/ace.min.js"></script>
+    <!--for bootstrap modal manager - to overide default modal limitations-->
+    <link rel="stylesheet" href="/css/bootstrap-modal.css">
+    <script src="/js/bootstrap-modal.js"></script>
+    <script src="/js/bootstrap-modalmanager.js"></script>
+    <!-- page specific plugin scripts-->
+    <!--if lte IE 8
+    script(src='/assets/js/excanvas.min.js')
+    
+    -->
+    <script src="/assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="/assets/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="/assets/js/bootbox.min.js"></script>
+    <script src="/assets/js/jquery.easy-pie-chart.min.js"></script>
+    <script src="/assets/js/jquery.gritter.min.js"></script>
+    <script src="/assets/js/spin.min.js"></script>
+    <!-- for ticker-->
+    <script src="/assets/js/jquery.slimscroll.min.js"></script>
+    <!--for charts-->
+    <script src="/assets/js/flot/jquery.flot.min.js"></script>
+    <script src="/assets/js/flot/jquery.flot.pie.min.js"></script>
+    <script src="/assets/js/flot/jquery.flot.resize.min.js"></script>
+    <script src="/assets/js/date-time/moment.min.js"></script>
+    <!--script for all slimScroll intialisation-->
+    <script src="/javascripts/extra-run.js"></script>
+  </head>
+  <body class="skin-4 navbar-fixed">
+    <!-- The navigation bar-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display-->
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target="#role-navigation" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar red"></span><span class="icon-bar green"></span><span class="icon-bar orange"></span><span class="icon-bar blue"></span></button><a href="#" class="navbar-brand text-warning"><i class="icon-leaf"></i> VALURAHA</a>
+        </div>
+        <!-- the navigation menu listing-->
+        <div id="role-navigation" class="collapse navbar-collapse dropdown-lighter">
+          <ul class="nav navbar-nav pull-left">
+            <li><a href="/page/home">
+                <!-- i.icon-dashboard--> Dashboard</a></li>
+            <li><a href="/page/trading">
+                <!-- i.icon-dollar --> Portfolio</a></li>
+            <li><a href="/page/market">
+                <!-- i.icon-trophy--> The Market</a></li>
+            <li><a href="/page/leagues">
+                <!-- i.icon-flag--> Leagues</a></li>
+          </ul>
+          <ul id="user-menu" class="nav navbar-nav ace-nav pull-right">
+            <li class="dark-opaque"><a href="" data-toggle="dropdown" class="dropdown-toggle"><img src="/assets/avatars/avatar2.png" alt="Eugene Mutai" class="nav-user-photo"><span class="user-info"><small>Hey, </small>Eugene</span><i class="icon-caret-down"></i></a>
+              <ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+                <li><a href=""><i class="icon-user"> Profile</i></a></li>
+                <li class="divider"></li>
+                <li><a href=""><i class="icon-off"> Log Out</i></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- The main content begins here-->
+    <div id="main-container" class="main-container">
+      <div class="main-container-inner">
+        <!--The menu sidebar-->
+        <!-- Consolidates the menu on mobile view--><a id="menu-toggler" href="" class="menu-toggler"><span class="menu-text"></span></a>
+        <!-- Application sidebar-->
+        <div id="sidebar" class="sidebar sidebar-fixed menumin">
+          <ul class="nav nav-list">
+            <li class="active"><a href="#"><i class="icon-arrow-down"></i><span class="menu-text">Trading Deck</span></a></li>
+            <!-- Valuraha options - loop-->
+            <li><a href="" class="dropdown-toggle"><i class="icon-list"></i><span class="menu-text">Shares</span><b class="arrow icon-angle-down"></b></a>
+              <ul class="submenu">
+                <li><a href="#modal-wizard" data-toggle="modal"><i class="icon-double-angle-right"></i>Buy</a></li>
+                <li><a><i class="icon-double-angle-right"></i>Sell</a></li>
+              </ul>
+            </li>
+            <li><a href="" class="dropdown-toggle"><i class="icon-list"></i><span class="menu-text">Bonds</span><b class="arrow icon-angle-down"></b></a>
+              <ul class="submenu">
+                <li><a href="#modal-wizard" data-toggle="modal"><i class="icon-double-angle-right"></i>Buy</a></li>
+                <li><a><i class="icon-double-angle-right"></i>Sell</a></li>
+              </ul>
+            </li>
+            <li><a href="" class="dropdown-toggle"><i class="icon-list"></i><span class="menu-text">Loans</span><b class="arrow icon-angle-down"></b></a>
+              <ul class="submenu">
+                <li><a href="#modal-wizard" data-toggle="modal"><i class="icon-double-angle-right"></i>Buy</a></li>
+                <li><a><i class="icon-double-angle-right"></i>Sell</a></li>
+              </ul>
+            </li>
+            <li><a href="" class="dropdown-toggle"><i class="icon-list"></i><span class="menu-text">Fixed Deposits</span><b class="arrow icon-angle-down"></b></a>
+              <ul class="submenu">
+                <li><a href="#modal-wizard" data-toggle="modal"><i class="icon-double-angle-right"></i>Buy</a></li>
+                <li><a><i class="icon-double-angle-right"></i>Sell</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div id="sidebar-collapse" class="sidebar-collapse"><i data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right" class="icon-double-angle-left"></i></div>
+        </div>
+        <!--Content in the middle of the app-->
+        <div class="main-content">
+          <!--The page header-->
+          <div id="breadcrumbs" class="breadcrumbs breadcrumbs-fixed">
+            <ul class="breadcrumb">
+              <li><i class="icon-home home-icon"></i><a href="">Home</a></li>
+              <li class="active">Profile</li>
+            </ul>
+          </div>
+          <div class="page-content">
+            <div class="vspace-20 hidden-xs hidden-sm"></div>
+            <div class="page-header">
+              <h1 class="orange">My Profile<small><i class="icon-double-angle-right"> Info</i></small></h1>
+            </div>
+            <div class="row">
+              <!--Main Dashboard stuff-->
+              <div class="col-sm-9">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="tabbable tabs left">
+                      <ul id="myTabs" class="nav nav-tabs tab-color-blue padding-10 background-blue">
+                        <li class="active"><a data-toggle="tab" href="#profile-info"><i class="red icon-asterisk bigger-75"></i> My Info</a></li>
+                        <li><a data-toggle="tab" href="#profile-activity"><i class="green icon-circle bigger-75"></i> Recent Activities</a></li>
+                        <li><a data-toggle="tab" href="#profile-settings"><i class="blue icon-money bigger-75"></i> Settings</a></li>
+                      </ul>
+                      <div class="tab-content">
+                        <!--The users info synopsis falls here-->
+                        <div id="profile-info" class="tab-pane in active">
+                          <div class="row">
+                            <div class="col-xs-12">
+                              <!-- Profile page centralised-->
+                              <div role="profile pic" class="col-xs-4"><span class="profile-picture"><img id="avatar" src="/assets/avatars/profile-pic.jpg" class="editable img-responsive">
+                                  <div class="space space-10"></div></span></div>
+                              <div class="col-xs-6">
+                                <h4 class="orange">Jhene Knights</h4>
+                                <div class="profile-info-row">
+                                  <div class="profile-info-name">Username</div>
+                                  <div class="profile-info-value"><span>jheneknights</span></div>
+                                </div>
+                                <div class="profile-info-row">
+                                  <div class="profile-info-name">Email Address</div>
+                                  <div class="profile-info-value">eugenemutai@gmail.com</div>
+                                </div>
+                                <div class="hr hr-dotted"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!--Added his recent stocks activities-->
+                        <div id="profile-activity" class="tab-pane">
+                          <!--adding a scroll-bar to condense the data-->
+                          <div data-height="300" class="slim-scroll">
+                            <div id="recent-activities-feed" class="profile-feed">
+                              <!--The Recent activities listed here-->
+                              <div class="profile-activity clearfix padding-10">
+                                <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-money btn-success no-hover"></i><span class="label label-success pull-right">Settled</span>
+                                  <p class="statement large">You <span class="label label-info">sold </span><strong class="label label-light bold">50000 </strong><span class="text-info"> Safaricom</span> shares for Ksh.<span class="text-info"> 1,568,000</span></p>
+                                  <div class="time"><i class="icon-time bigger-32"></i> 2 days ago</div>
+                                </div>
+                              </div>
+                              <div class="profile-activity clearfix padding-10">
+                                <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-money btn-success no-hover"></i><span class="label label-success pull-right">Settled</span>
+                                  <p class="statement large">You <span class="label label-info">sold </span><strong class="label label-light bold">50000 </strong><span class="text-info"> Safaricom</span> shares for Ksh.<span class="text-info"> 1,568,000</span></p>
+                                  <div class="time"><i class="icon-time bigger-32"></i> 2 days ago</div>
+                                </div>
+                              </div>
+                              <div class="profile-activity clearfix padding-10">
+                                <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-money btn-success no-hover"></i><span class="label label-success pull-right">Settled</span>
+                                  <p class="statement large">You <span class="label label-info">sold </span><strong class="label label-light bold">50000 </strong><span class="text-info"> Safaricom</span> shares for Ksh.<span class="text-info"> 1,568,000</span></p>
+                                  <div class="time"><i class="icon-time bigger-32"></i> 2 days ago</div>
+                                </div>
+                              </div>
+                              <div class="profile-activity clearfix padding-10">
+                                <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-money btn-success no-hover"></i><span class="label label-success pull-right">Settled</span>
+                                  <p class="statement large">You <span class="label label-info">sold </span><strong class="label label-light bold">50000 </strong><span class="text-info"> Safaricom</span> shares for Ksh.<span class="text-info"> 1,568,000</span></p>
+                                  <div class="time"><i class="icon-time bigger-32"></i> 2 days ago</div>
+                                </div>
+                              </div>
+                              <div class="profile-activity clearfix padding-10">
+                                <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-money btn-success no-hover"></i><span class="label label-success pull-right">Settled</span>
+                                  <p class="statement large">You <span class="label label-info">sold </span><strong class="label label-light bold">50000 </strong><span class="text-info"> Safaricom</span> shares for Ksh.<span class="text-info"> 1,568,000</span></p>
+                                  <div class="time"><i class="icon-time bigger-32"></i> 2 days ago</div>
+                                </div>
+                              </div>
+                              <div class="profile-activity clearfix padding-10">
+                                <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-money btn-success no-hover"></i><span class="label label-success pull-right">Settled</span>
+                                  <p class="statement large">You <span class="label label-info">sold </span><strong class="label label-light bold">50000 </strong><span class="text-info"> Safaricom</span> shares for Ksh.<span class="text-info"> 1,568,000</span></p>
+                                  <div class="time"><i class="icon-time bigger-32"></i> 2 days ago</div>
+                                </div>
+                              </div>
+                              <div class="profile-activity clearfix padding-10">
+                                <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-money btn-success no-hover"></i><span class="label label-success pull-right">Settled</span>
+                                  <p class="statement large">You <span class="label label-info">sold </span><strong class="label label-light bold">50000 </strong><span class="text-info"> Safaricom</span> shares for Ksh.<span class="text-info"> 1,568,000</span></p>
+                                  <div class="time"><i class="icon-time bigger-32"></i> 2 days ago</div>
+                                </div>
+                              </div>
+                              <div class="profile-activity clearfix padding-10">
+                                <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-money btn-success no-hover"></i><span class="label label-success pull-right">Settled</span>
+                                  <p class="statement large">You <span class="label label-info">sold </span><strong class="label label-light bold">50000 </strong><span class="text-info"> Safaricom</span> shares for Ksh.<span class="text-info"> 1,568,000</span></p>
+                                  <div class="time"><i class="icon-time bigger-32"></i> 2 days ago</div>
+                                </div>
+                              </div>
+                              <div class="profile-activity clearfix padding-10">
+                                <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-money btn-success no-hover"></i><span class="label label-success pull-right">Settled</span>
+                                  <p class="statement large">You <span class="label label-info">sold </span><strong class="label label-light bold">50000 </strong><span class="text-info"> Safaricom</span> shares for Ksh.<span class="text-info"> 1,568,000</span></p>
+                                  <div class="time"><i class="icon-time bigger-32"></i> 2 days ago</div>
+                                </div>
+                              </div>
+                              <div class="profile-activity clearfix padding-10">
+                                <div style="padding-right: 0.45em"><i class="pull-left thumbicon icon-money btn-success no-hover"></i><span class="label label-success pull-right">Settled</span>
+                                  <p class="statement large">You <span class="label label-info">sold </span><strong class="label label-light bold">50000 </strong><span class="text-info"> Safaricom</span> shares for Ksh.<span class="text-info"> 1,568,000</span></p>
+                                  <div class="time"><i class="icon-time bigger-32"></i> 2 days ago</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!--Settings - for now edit their password-->
+                        <div id="profile-settings" class="tab-pane">
+                          <div class="space space-15"></div>
+                          <form id="validate-form" method="post" novalidate class="form-horizontal">
+                            <!-- first password input-->
+                            <div class="form-group">
+                              <label for="password" class="control-label col-xs-12 col-sm-3 no-padding-right"><strong>password</strong></label>
+                              <div class="col-xs-8 col-sm-9">
+                                <div class="clearfix">
+                                  <input id="password" type="password" name="password" class="form-control">
+                                </div>
+                              </div>
+                              <div class="space space-15"></div>
+                            </div>
+                            <!-- repeat password-->
+                            <div class="form-group">
+                              <label for="passwordtwo" class="control-label col-xs-12 col-sm-3 no-padding-right"><strong>repeat password</strong></label>
+                              <div class="col-xs-8 col-sm-9">
+                                <div class="clearfix">
+                                  <input id="passwordtwo" type="password" name="passwordtwo" class="form-control">
+                                </div>
+                              </div>
+                              <div class="space space-15"></div>
+                            </div>
+                            <div class="form-group">
+                              <div class="col-sm-offset-3 col-sm-9">
+                                <button type="submit" class="btn btn-lg btn-warning hspace-15">Reset Password</button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
